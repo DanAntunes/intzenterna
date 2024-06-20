@@ -1,0 +1,361 @@
+/* Layout
+--------------------------------------------*/
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background:linear-gradient(50deg,#5e5d5d,#f2f1f3);
+    background-attachment: fixed;
+    font-family: JetBrains Mono ;
+    padding: 0;
+    margin: 0;
+}
+
+/* Carousel config
+-------------------------------------------- */
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-prev {
+    left: 10px;
+}
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-item img {
+    width: 100%;  /* Ajuste a largura desejada */
+    height: 500px;  /* Ajuste a altura desejada */
+    object-fit: cover;  /* Isso irá cortar a imagem para se ajustar ao tamanho especificado */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5em; /* Aumenta o tamanho do texto */
+    text-shadow: 2px 2px 4px #000000; /* Adiciona sombra ao texto para destacá-lo no fundo */
+    color: #FFFFFF; /* Cor do texto */
+}
+
+.carousel-caption p {
+    font-size: 1.0em; /* Aumenta o tamanho do texto */
+    background-color: rgba(0,0,0,0.6); /* Adiciona um fundo semi-transparente para destacar o texto */
+    padding: 10px; /* Adiciona espaço ao redor do texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao fundo */
+    color: #FFFFFF; /* Cor do texto */
+}
+
+/* Relogio config
+-----------------------------------------*/
+
+.rgb-borda {
+  background: #020024;
+  background: linear-gradient(155deg, #333333 0%, #808080 0%, #C0C0C0 12%, #808080 24%, #333333 36%, #C0C0C0 48%, #808080 60%, #333333 72%, #808080 84%, #C0C0C0 96%);
+  width: 8em; /* Diminui a largura */
+  height: 3em; /* Diminui a altura */
+  border-radius: 10px;
+  position: relative;
+  animation: gradient 55s linear infinite;
+}
+
+.rgb-borda::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    filter: blur(4px);
+}
+
+.rgb-borda .botao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #1f1f1f 74%);
+    width: 6.8em; /* Diminui a largura */
+    height: 2.3em; /* Diminui a altura */
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em; /* Ajusta o alinhamento vertical do texto */
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 18.75em 31.25em;
+    }
+    100% {
+        background-position: 0.1em 0.1em;
+    }
+}
+
+/* Linha animada
+-----------------------------------------*/
+.animation-line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #F45687;
+    animation: border-color 2s linear infinite;
+  }
+
+  @keyframes border-color {
+    0% {
+      background-color: #FFF7;
+    }
+    50% {
+      background-color: #0A0A09;
+    }
+    100% {
+      background-color: #fc6998;
+    }
+  }
+
+
+/* Conteudo
+-----------------------------------------*/
+.bola{ /* Border-Radius for article titulos */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  border: 2px solid transparent; /* Transparent border initially */
+  transition: border 0.1s ease; /* Smooth transition */
+}
+
+.bola:hover {
+  border: 5px solid #0058fc; /* White border on hover */
+  transform: scale(1.1); /* Zoom in slightly on hover */
+  filter: grayscale(0.5) brightness(1.2); /* Grayscale and brightness on hover */
+}
+
+.player-img {
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  width: 200px;
+  height: 160px;
+}
+
+.player-img:hover {
+  filter: drop-shadow(10px 10px 10px rgba(176, 41, 100, 1)  );
+}
+
+.custom-h4  {
+  display: inline-block;
+  width: 200px; /* A mesma largura da imagem */
+  background-color: white; /* Caixa branca */
+  border: 2px solid black; /* Borda */
+  animation: border-animation 2s infinite; /* Animação na borda */
+}
+
+@keyframes border-animation {
+    0% {border-color: black;}
+    50% {border-color: rgb(255, 255, 255);}
+    100% {border-color: black;}
+}
+
+.custom-h4 a {
+  text-decoration: none;
+}
+
+.bg-darker {
+  background-color: #191919; /* Cor mais escura que o bg-dark do Bootstrap */
+  width: 200px;
+}
+
+.container-background {
+  background-color: #191919;
+}
+  
+.border-darkest {
+  border: 2px solid #0d0d0d; /* Cor ainda mais escura para a borda */
+}
+
+
+/* Rodapé
+-----------------------------------------*/
+
+.social-icons li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-icons li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #000000;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #000000;
+  transition: .5s;
+}
+
+.social-icons li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.social-icons li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ffee10;
+}
+
+.social-icons li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+footer {
+    background: #000;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+footer {
+    color: #919496;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+footer .navbar-nav a:hover {
+    color: #ffee10;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+footer h4 {
+    font-size: 1em;
+}
+.botao{
+  letter-spacing: .1em;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.efeito{
+  color: #fff;
+  border: 4px solid #000;
+  box-shadow: inset 0 0 0 1px #000;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+
+.efeito:hover{
+  color: #000;
+  border: 4px solid #212529;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 4px #eee;
+}
+
+.efeito a{
+  transition: all .2s ease-out;
+  z-index: 2;
+}
+
+.efeito:hover a {
+  letter-spacing: 13em;
+  color: #333;
+}
+
+.efeito:after {
+  background: #fff;
+  border: 0 solid #000;
+  content: '';
+  height: 155px;
+  left: -75px;
+  opacity: .8;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(.075, .82, .165, 1);
+  z-index: 1;
+}
+
+.efeito:hover::after {
+  background: #fff;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  transform: rotate(40deg);
+}
+
+.active {
+  color: rgb(0, 0, 0) !important;
+  background-color: white !important;
+}
+.tab-content .tab-pane.fade.show{
+  color: #fff !important; 
+  background-color:  #191919!important; 
+  border-color: #191919!important;
+}
+.btn-custom {
+  color: white;
+  text-transform: uppercase;
+  transition: backgroud 0.4s, color 0.4s;
+  padding: 5px 5px;
+}
+.branco {
+  border: 0px solid white;
+}
+
+.branco:hover {
+  background-color: white;
+  color: black;
+}
+
+.texto{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
