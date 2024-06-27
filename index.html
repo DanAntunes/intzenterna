@@ -47,9 +47,6 @@
        <a href="index.html" class="navbar-brand logo">
          <img src="public/assets/img/logo/logo.png" width="142" alt="INTZ logo">
        </a>
-       <div class="astro d-none d-md-block ">
-        <img src="public/assets/img/apollo.png" width="75" alt="Apollo">
-      </div>
       </span>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,31 +54,38 @@
 
       <div class="collapse navbar-collapse  justify-content-center" id="navegacao">
         <ul class="navbar-nav rubik-mono-one-regular">
+
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="historia.html">História </a>
-          </li>
+            <a class="nav-link" aria-current="page" href="historia.html">História</a>
+           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="titulos.html">Títulos </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="lineup.html">Equipes</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="idolo.html">Ídolos </a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Explorar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="idolo.html">Ídolos </a></li>
+              <li><a class="dropdown-item" href="curiosidades.html">Curiosidades</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="curiosidades.html">Curiosidades</a>
-          </li>
+
         </ul>
       </div>
-        <div class=" ml-5 time d-none d-md-block rgb-borda ">
+        <div class=" ml-5 time d-none d-lg-block rgb-borda ">
           <div class=" botao" id="time">12:00:00</div>
       </div>
       </div>
-    </nav><!--/fim nav -->
+      </div><!--/fim nav -->
   </header><!--/fim header-->
 
   <!-- Modal de aviso -->
