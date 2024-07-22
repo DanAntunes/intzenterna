@@ -1,0 +1,41 @@
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev {
+  left: 10px;
+}
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-item img {
+  width: 100%; /* Ajuste a largura desejada */
+  height: 500px; /* Ajuste a altura desejada */
+  object-fit: cover; /* Isso irá cortar a imagem para se ajustar ao tamanho especificado */
+}
+
+.carousel-caption h5 {
+  font-size: 1.5em; /* Aumenta o tamanho do texto */
+  text-shadow: 2px 2px 4px #000000; /* Adiciona sombra ao texto para destacá-lo no fundo */
+  color: #ffffff; /* Cor do texto */
+}
+
+.carousel-caption p {
+  font-size: 1em; /* Aumenta o tamanho do texto */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adiciona um fundo semi-transparente para destacar o texto */
+  padding: 10px; /* Adiciona espaço ao redor do texto */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao fundo */
+  color: #ffffff; /* Cor do texto */
+}
