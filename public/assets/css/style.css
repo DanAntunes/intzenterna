@@ -47,12 +47,20 @@ body {
   width: 200px;
 }
 
+.bg-darke {
+  background-color: #191919;
+}
+
 .container-background {
   background-color: #191919;
 }
 
 .border-darkest {
   border: 2px solid #0d0d0d; /* Cor ainda mais escura para a borda */
+}
+
+input::placeholder {
+  color: #faf7f7; /* Substitua pela cor desejada */
 }
 
 /* customização da área de videos
