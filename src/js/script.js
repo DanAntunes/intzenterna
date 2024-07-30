@@ -17,4 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
     avisoModal.show();
 });
 
-  
+const searchInput = document.getElementById('searchInput');
+const itemList = document.getElementById('itemList').children;
+const noResultsMessage = document.getElementById('noResultsMessage');
+
+searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    let foundItems = false;
+
+    for (const item of itemList) {
+        const itemName = item.getAttribute('data-search').toLowerCase();
+        if (itemName.includes(searchTerm)) {
+            item.style.display = 'block';
+            foundItems = true;
+        } else {
+            item.style.display = 'none';
+        }
+    }
+
+    noResultsMessage.style.display = foundItems ? 'none' : 'block';
+});
