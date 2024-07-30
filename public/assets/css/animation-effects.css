@@ -113,7 +113,7 @@
 
 /* Linha animada 1
 -----------------------------------------*/
-.animation-line::after {
+.animation-line-pink::after {
   content: "";
   display: block;
   width: 100%;
@@ -121,10 +121,10 @@
   margin-top: 5px;
   margin-bottom: 10px;
   background-color: #f45687;
-  animation: border-color 2s linear infinite;
+  animation: border-pink 2s linear infinite;
 }
 
-@keyframes border-color {
+@keyframes border-pink {
   0% {
     background-color: #fff7;
   }
@@ -139,18 +139,18 @@
 /* Linha animada 2
 -----------------------------------------*/
 
-.animation-line2::after {
+.animation-line-gold::after {
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   margin-top: 5px;
   margin-bottom: 10px;
-  background-color: #f45687;
-  animation: border-color 2s linear infinite;
+  background-color:#e99c0d; 
+  animation: border-gold 2s linear infinite;
 }
 
-@keyframes border-color {
+@keyframes border-gold {
   0% {
     background-color: #fff7;
   }
@@ -159,5 +159,30 @@
   }
   100% {
     background-color: #e99c0d;
+  }
+}
+/* Linha animada 2
+-----------------------------------------*/
+
+.animation-line-bw::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #5c5c5c;
+  animation: border-bw 2s linear infinite;
+}
+
+@keyframes border-bw {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #ffffff;
   }
 }
