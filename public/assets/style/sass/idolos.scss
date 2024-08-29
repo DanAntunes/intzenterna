@@ -1,0 +1,25 @@
+@mixin png-i($image-url) {
+  width: 85%;
+  height: 300px;
+  margin-bottom: 5px;
+  border-radius: 19px 19px 0 0;
+  background-image: url($image-url);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.png-i-1 { @include png-i('/public/assets/img/idolos/micao.jpg'); }
+.png-i-2 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-3 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-4 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-5 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-6 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-7 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-8 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-9 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-10 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-11 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-12 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-13 { @include png-i('/public/assets/img/idolos/'); }
+.png-i-14 { @include png-i('/public/assets/img/idolos/'); }
