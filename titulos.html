@@ -9,33 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/normalize.css">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" type="text/css" href="public/assets/style/css/normalize.css">
 
-    <!--Stile custom-->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
+  <!--Style custom-->
+  <link rel="stylesheet" type="text/css" href="public/assets/style/css/style.css">
 
-    <!--Style custom Header - Navbar -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/navbar.css">
+  <!--Style custom Header - Navbar -->
+  <link rel="stylesheet" type="text/css" href="public/assets/style/css/navbar.css">
 
-    <!--Style custom - carousel -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/carousel">
+  <!--Style custom Clock-->
+  <link rel="stylesheet" type="text/css" href="public/assets/style/css/specific-style/clock.css">
 
-    <!--Style custom animations and effects -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/animation-effects.css">
+   <!--Style custom Footer-->
+   <link rel="stylesheet" type="text/css" href="public/assets/style/css/footer.css">
 
-    <!--Stile custom Footer-->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/footer.css">
+   <!-- Media Queries -->
+   <link rel="stylesheet" type="text/css" href="public/assets/style/css/media_queries.css">
 
-    <!-- Media Queries -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/media_queries.css">
-
-    
      <title>INTZ - Títulos</title>
      <link rel="apple-touch-icon" sizes="180x180" href="public/assets/img/logo-title/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/logo-title/favicon-32x32.png">
@@ -53,7 +49,7 @@
       <div class="container d-flex flex-row">
       <span>
        <a href="index.html" class="navbar-brand logo">
-         <img src="public/assets/img/logo/logo.png" width="142" alt="INTZ logo">
+         <img src="public/assets/img/header/logo.png" width="142" alt="INTZ logo">
        </a>
       </span>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +68,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="lineup.html">Equipes</a>
+            <a class="nav-link" href="idolo.html">Ídolos</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -80,17 +76,16 @@
               Explorar
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="idolo.html">Ídolos </a></li>
-              <li><a class="dropdown-item" href="curiosidades.html">Curiosidades</a></li>
+              <li><a class="dropdown-item" href="/src/pages/dropdown/curiosidades.html">Curiosidades</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="/src/pages/dropdown/sobre.html">Sobre</a></li>
             </ul>
           </li>
 
         </ul>
       </div>
         <div class=" ml-5 time d-none d-lg-block rgb-borda ">
-          <div class=" botao" id="time">12:00:00</div>
+          <div class="clock" id="time">12:00:00</div>
       </div>
       </div>
       </div><!--/fim nav -->
@@ -99,21 +94,21 @@
   
   <main class="container-fluid m-auto p-2">
 
-    <article class="container bg-darke text-light mt-1 rounded justify-content-center" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
+    <article class="container dark text-light mt-1 rounded justify-content-center" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
       <div class="d-flex flex-column align-items-center">
           <h3 class="text-light mt-3 display-2 text-uppercase">Titulos</h3>
       </div>
     </article>
 
-    <article class="container bg-darke text-light p-1 mt-1 rounded justify-content-center">
+    <article class="container dark text-light p-1 mt-1 rounded justify-content-center">
 
       <input type="text" id="searchInput" class="form-control mb-3 pt-2 p-2 text-dark fs-5" placeholder="Barra de pesquisa">
 
       <section class="list-group gap-1" id="itemList">
 
-        <div class="card mb-3 bg-darke text-light" data-search="Cblol 2015 2015.1 2015/1 exodia"><!--Titulo 1-->
+        <div class="card mb-3 dark text-light" data-search="Cblol 2015 2015.1 2015/1 exodia" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 1-->
             <div class="row g-0">
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                 <img src="public/assets/img/titulos/titulo-1.webp" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start" alt="Titulo 1">
               </figure>
             <div class="col-md-8">
@@ -125,15 +120,15 @@
                 </p>
                 <br>
                 
-                <a href="src/pages/titles/cblol-2015-1.html" class="btn btn-md btn-custom branco">Saiba mais</a></div>
+                <a href="src/pages/titles/2015/cblol-2015-1.html" class="btn btn-md btn-custom branco">Saiba mais</a></div>
               </div>
             </div>
         </div>
 
-        <div  class="card mb-3 bg-darke text-light" data-search="Circuito Desafiante RED 2015 Circuitao"><!--Titulo 2-->
+        <div  class="card mb-3 dark text-light" data-search="Circuito Desafiante RED 2015 Circuitao" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 2-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/intzred.png" class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start"  alt="Titulo 2">
               </figure>
 
@@ -145,16 +140,16 @@
                     Em 2015, durante a ascensão da INTZ ao topo do cenário competitivo de League of Legends no Brasil, sua segunda equipe, a INTZ Red, 
                     conquistou o título do “Circuitão”, garantindo sua entrada na elite do LoL no país.
                   </p>
-                  <a href="src/pages/titles/circuito-desafiante-2015.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2015/circuito-desafiante-2015.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>
          
-        <div  class="card mb-3 bg-darke text-light" data-search="Cblol 2015.3 pos 2015/3 temporada respeito seriedade"><!--Titulo 3-->
+        <div  class="card mb-3 dark text-light" data-search="Cblol 2015.3 pos 2015/3 temporada respeito seriedade" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 3-->
               <div class="row g-0">
 
-                  <figure class="col-md-4">
+                  <figure class="col-md-4 p-1">
                       <img src="public/assets/img/titulos/pos temporada titulo.png" class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start"  alt="Titulo 3">
                   </figure>
 
@@ -165,16 +160,16 @@
                       <p class="card-text fs-5">Com o retorno do Revolta e a entrada do Loop para o lugar do Jockster, a INTZ disputou o CBLOL 2015 
                       Pós-Temporada. O torneio foi realizado entre os dias 12 e 15 de novembro.
                       </p>
-                      <a href="src/pages/titles/cblol-pos-temporada.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                      <a href="src/pages/titles/2015/cblol-pos-temporada.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                     </div>
                   </div>
               </div>
           </div>
 
-        <div  class="card mb-3 bg-darke text-light" data-search="Cblol 2016 2016.1 2016/1 exodia"><!--Titulo 4-->
+        <div  class="card mb-3 dark text-light" data-search="Cblol 2016 2016.1 2016/1 exodia" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 4-->
             <div class="row g-0">
 
-                <figure class="col-md-4">
+                <figure class="col-md-4 p-1">
                     <img src="public/assets/img/titulos/2016.1.webp" class="img-fluid rounded-start"
                      style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"
                       class="img-fluid rounded-start"  
@@ -188,16 +183,16 @@
                     <p class="card-text fs-5">
                       Com uma campanha impressionante, sem perder uma única série, a INTZ sagrou-se campeã do CBLOL 1º Split de 2016 mais uma vez, superando a Keyd. 
                     </p>
-                    <a href="src/pages/titles/cblol-2016-1.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                    <a href="src/pages/titles/2016/cblol-2016-1.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                   </div>
                 </div>
             </div>
           </div>
 
-        <div  class="card mb-3 bg-darke text-light" data-search="Cblol 2016 2016.2 2016/2 exodia"><!--Titulo 5-->
+        <div  class="card mb-3 dark text-light" data-search="Cblol 2016 2016.2 2016/2 exodia" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 5-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/2016.2.jpg"
                    class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" 
                    class="img-fluid rounded-start"  alt="Titulo 5">
@@ -211,16 +206,16 @@
                     Em 2016, a INTZ conquistou o título do 2º Split. Com uma campanha sólida, A INTZ venceu a CNB por 3 a 1 na final, 
                     mais uma vez sem perder nenhuma serie.
                   </p>
-                  <a href="src/pages/titles/cblol-2016-2.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2016/cblol-2016-2.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>
 
-         <div  class="card mb-3 bg-darke text-light" data-search="iwcq International Wildcard Qualifier 2016 exodia IWC"><!--Titulo 6-->
+         <div  class="card mb-3 dark text-light" data-search="iwcq International Wildcard Qualifier 2016 exodia IWC" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 6-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/iwcq2016.png"
                    class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"
                    class="img-fluid rounded-start"  alt="Titulo 6">
@@ -234,16 +229,16 @@
                     Após bater na trave nas competições internacionais várias vezes, 
                     a INTZ finalmente superou os obstáculos e venceu os adversários turcos no IWC mais acirrado de todos os tempos. 
                   </p>
-                  <a href="src/pages/titles/iwcq-2016.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2016/iwcq-2016.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>  
 
-         <div  class="card mb-3 bg-darke text-light" data-search="super liga superliga abcde 2017"><!--Titulo 7-->
+         <div  class="card mb-3 dark text-light" data-search="super liga superliga abcde 2017" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 7-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/superliga1-2.webp" class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start"  alt="Titulo 7">
               </figure>
 
@@ -255,36 +250,36 @@
                     Em 2017, teve início a Superliga ABCDE, na qual a INTZ venceu sua primeira edição,
                      estreando sua lineup reformulada após o Exodia. A nova INTZ derrotou a PRG por 3 a 0, na grande final.
                   </p>
-                  <a href="src/pages/titles/superliga-abcde-2017.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2017/superliga-abcde-2017.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>
 
-         <div  class="card mb-3 bg-darke text-light" data-search="super liga superliga abcde 2018 salsicha"><!--Titulo 8-->
+         <div  class="card mb-3 dark text-light" data-search="super liga superliga abcde 2018 salsicha" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 8-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/superliga2.jpg" class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start"  alt="Titulo 8">
               </figure>
 
               <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">SUPER LIGA ABCDE 2019</h5>
+                    <h5 class="card-title">SUPER LIGA ABCDE 2018</h5>
                   <span class="animation-line-bw"></span>
                   <p class="card-text fs-5">
                     Após um ano difícil, a INTZ venceu a segunda edição da Superliga, derrotando a paiN. Isso marcou o início da dinastia do Exodia Salsicha.
                   </p>
-                  <a href="src/pages/titles/superliga-abcde-2018.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2018/superliga-abcde-2018.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>
 
-         <div  class="card mb-3 bg-darke text-light" data-search="cblol salsicha 2019.1 2019 "><!--Titulo 9-->
+         <div  class="card mb-3 dark text-light" data-search="cblol salsicha 2019.1 2019 " style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 9-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/2019.1.jpg" class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start"  alt="Titulo 9">
               </figure>
 
@@ -296,16 +291,16 @@
                     Mais uma vez, os underdogs da INTZ venceram o Flamengo em uma das melhores finais da história do CBLoL,
                      tornando-se a primeira tricampeã do torneio.
                   </p>
-                  <a href="src/pages/titles/cblol-2019-1.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2019/cblol-2019-1.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>
 
-         <div  class="card mb-3 bg-darke text-light" data-search="cblol salsicha 2020.2 2020 "><!--Titulo 10-->
+         <div  class="card mb-3 dark text-light" data-search="cblol salsicha 2020.2 2020 " style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!--Titulo 10-->
           <div class="row g-0">
 
-              <figure class="col-md-4">
+              <figure class="col-md-4 p-1">
                   <img src="public/assets/img/titulos/2020.2.webp" class="img-fluid rounded-start" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);" class="img-fluid rounded-start"  alt="Titulo 10">
               </figure>
 
@@ -318,14 +313,14 @@
                     tornando-se a única pentacampeã do CBLOL. Esse foi seu ultimo titulo de CBLOL.
                     
                   </p>
-                  <a href="src/pages/titles/cblol-2020-2.html" class="btn btn-md btn-custom branco">Saiba mais</a>
+                  <a href="src/pages/titles/2020/cblol-2020-2.html" class="btn btn-md btn-custom branco">Saiba mais</a>
                 </div>
               </div>
           </div>
          </div>
          
       </section>
-      <div id="noResultsMessage" class="bg-darke" style="display: none; color: red;">
+      <div id="noResultsMessage" class="dark" style="display: none; color: red;" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
         <h4 class="lead mt-2 text-center text-uppercase">
             Item não encontrado.
         </h4>
@@ -348,7 +343,7 @@
 <footer class="container-fluid footer "><!--Start Rodapé-->
   <div class="row">
     <div class="col-lg-2  d-none d-md-block" >
-      <img  class="px-4" src="public/assets/img/apollo.png" width="142">
+      <img  class="px-4" src="public/assets/img/footer/apollo.png" width="142">
     </div>
     <div class="col-lg-2 organizacao "><!--Ul Organização-->
       <h4>Organização</h4>

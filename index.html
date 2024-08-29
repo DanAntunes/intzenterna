@@ -15,27 +15,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/normalize.css">
 
-    <!--Stile custom-->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
+    <!--Style custom-->
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/style.css">
 
     <!--Style custom Header - Navbar -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/navbar.css">
 
     <!--Style custom - carousel -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/specific-style/carousel.css">
 
     <!--Style custom animation and effects -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/animation-effects.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/specific-style/animation-effects.css">
 
-    <!--Stile custom Footer-->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/footer.css">
+    <!--Style custom Footer-->
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/footer.css">
 
     <!-- Media Queries -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/media_queries.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/media_queries.css">
 
+    <!--Style custom Clock-->
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/specific-style/clock.css">
+
+    <!--Style custom Actual Line Up-->
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/specific-style/actual-lineup.css">
     
+    <!--Style custom Music-->
+    <link rel="stylesheet" type="text/css" href="public/assets/style/css/specific-style/music-style.css">
+
      <title>INTZ - A Magnetica</title>
      <link rel="apple-touch-icon" sizes="180x180" href="public/assets/img/logo-title/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/logo-title/favicon-32x32.png">
@@ -53,7 +61,7 @@
       <div class="container d-flex flex-row">
       <span>
        <a href="index.html" class="navbar-brand logo">
-         <img src="public/assets/img/logo/logo.png" width="142" alt="INTZ logo">
+         <img src="public/assets/img/header/logo.png" width="142" alt="INTZ logo">
        </a>
       </span>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +80,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="lineup.html">Equipes</a>
+            <a class="nav-link" href="idolo.html">Ídolos</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -80,17 +88,15 @@
               Explorar
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="idolo.html">Ídolos </a></li>
-              <li><a class="dropdown-item" href="curiosidades.html">Curiosidades</a></li>
+              <li><a class="dropdown-item" href="/src/pages/dropdown/curiosidades.html">Curiosidades</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
-            </ul>
+              <li><a class="dropdown-item" href="/src/pages/dropdown/sobre.html">Sobre</a></li>
           </li>
 
         </ul>
       </div>
         <div class=" ml-5 time d-none d-lg-block rgb-borda ">
-          <div class=" botao" id="time">12:00:00</div>
+          <div class="clock" id="time">12:00:00</div>
       </div>
       </div>
       </div><!--/fim nav -->
@@ -124,19 +130,19 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="public/assets/img/slide/intz-space-apollo.jpg" class="d-block w-100 img-fluid" alt="intz space apollo">
+          <img src="public/assets/img/carousel/intz-space-apollo.jpg" class="d-block w-100 img-fluid" alt="intz space apollo">
           <div class="carousel-caption d-none d-md-block">
             <h5>Apollo</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="public/assets/img/slide/intz-exodia.png" class="d-block w-100 img-fluid" alt="intz exodia">
+          <img src="public/assets/img/carousel/intz-exodia.png" class="d-block w-100 img-fluid" alt="intz exodia">
           <div class="carousel-caption d-none d-md-block">
             <h5>O PROIBIDO</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="public/assets/img/slide/intz-exodia-salsicha.jpg" class="d-block w-100 img-fluid" alt="intz exodia salsicha">
+          <img src="public/assets/img/carousel/intz-exodia-salsicha.jpg" class="d-block w-100 img-fluid" alt="intz exodia salsicha">
           <div class="carousel-caption d-none d-md-block">
             <h5>🌭</h5>
           </div>
@@ -186,35 +192,35 @@
     <section class="bg-dark  p-3 row rounded">
       <div class="col-md-2 d-flex flex-column align-items-center"><!--2015-->
         <a href="src/pages/titles/cblol-2015-1.html">
-         <img class="bola img-fluid mb-2" src="public/assets/img/titulos/titulo-1_Easy-Resize.com.jpg" alt="Cblol 2015">
+         <img class="circle img-fluid mb-2" src="public/assets/img/index-titulos-img/titulo-1_Easy-Resize.com.jpg" alt="Cblol 2015">
         </a>
           <p class="text-white text-center  fw-bolder text-uppercase">CBLOL 2015.1</p> 
        </div>
 
       <div class="col-md-3 d-flex flex-column align-items-center"><!--2016.1-->
         <a href="src/pages/titles/cblol-2016-1.html">
-          <img class="bola img-fluid mb-2" src="public/assets/img/titulos/2-titulo_Easy-Resize.com.jpg" alt="CBLOL 2016.1">
+          <img class="circle img-fluid mb-2" src="public/assets/img/index-titulos-img/2-titulo_Easy-Resize.com.jpg" alt="CBLOL 2016.1">
         </a>
           <p class="text-white text-center fw-bolder text-uppercase">CBLOL 2016.1</p> 
       </div>
 
       <div class="col-md-2 d-flex flex-column align-items-center"><!--2016.2-->
         <a href="src/pages/titles/cblol-2016-2.html">
-          <img class="bola img-fluid mb-2" src="public/assets/img/titulos/titulo-3_Easy-Resize.com.jpg"alt="CBLOL 2016.2">
+          <img class="circle img-fluid mb-2" src="public/assets/img/index-titulos-img/titulo-3_Easy-Resize.com.jpg"alt="CBLOL 2016.2">
         </a>
           <p class="text-white text-center fw-bolder text-uppercase">CBLOL 2016.2</p>  
       </div>
 
       <div class="col-md-3 d-flex flex-column align-items-center"><!--2019.1-->
         <a href="src/pages/titles/cblol-2019-1.html">
-          <img class="bola img-fluid mb-2" src="public/assets/img/titulos/4-titulo_Easy-Resize.com.jpg" alt="Image Titulo 4">
+          <img class="circle img-fluid mb-2" src="public/assets/img/index-titulos-img/4-titulo_Easy-Resize.com.jpg" alt="Image Titulo 4">
         </a>
           <p class="text-white text-center fw-bolder text-uppercase">CBLOL 2019.1</p>
       </div>
 
       <div class="col-md-2 d-flex flex-column align-items-center"><!--2020.2-->
         <a href="src/pages/titles/cblol-2020-2.html">
-          <img class="bola img-fluid mb-2" src="public/assets/img/titulos/5-titulo_Easy-Resize.com.jpg" alt="Image titulo 5">
+          <img class="circle img-fluid mb-2" src="public/assets/img/index-titulos-img/5-titulo_Easy-Resize.com.jpg" alt="Image titulo 5">
         </a>
           <p class="text-white text-center fw-bolder text-uppercase">CBLOL 2020.2</p> 
        </div>
@@ -229,7 +235,7 @@
 
       <div class="col player-col">
         <a href="https://lol.fandom.com/wiki/Yupps" target="_blank">
-            <img src="public/assets/img/elenco/Yupps.jpg" alt="Yupps" class="mb-2 player-img rounded">
+            <img src="public/assets/img/line-up/Yupps.jpg" alt="Yupps" class="mb-2 player-img rounded">
         </a>
         <h4 class="text-dark text-center custom-h4 ">Yuups</h4>
         <div class="bg-darker text-light border-darkest rounded p-2 mb-2">
@@ -243,7 +249,7 @@
 
       <div class="col player-col ">
         <a href="https://lol.fandom.com/wiki/Yampi" target="_blank">
-          <img src="public/assets/img/elenco/Yampi.jpg" alt="Yampi" class="mb-2 player-img rounded">
+          <img src="public/assets/img/line-up/Yampi.jpg" alt="Yampi" class="mb-2 player-img rounded">
         </a>
         <h4 class="text-dark text-center custom-h4 ">Yampi</h4>
         <div class="bg-darker text-light border-darkest rounded p-2 mb-2"> <!-- Caixa com informações do jogador -->
@@ -257,7 +263,7 @@
 
       <div class="col player-col ">
         <a href="https://lol.fandom.com/wiki/Dioge_(Diogenes_Barbosa)" target="_blank">
-          <img src="public/assets/img/elenco/Dioge.jpg" alt="Dioge" class="mb-2 player-img rounded">
+          <img src="public/assets/img/line-up/Dioge.jpg" alt="Dioge" class="mb-2 player-img rounded">
         </a>
         <h4 class="text-dark text-center custom-h4 ">Dioge</h4>
         <div class="bg-darker text-light border-darkest rounded p-2 mb-2"> <!-- Caixa com informações do jogador -->
@@ -271,7 +277,7 @@
 
       <div class="col player-col ">
         <a href="https://lol.fandom.com/wiki/NinjaKiwi" target="_blank">
-          <img src="public/assets/img/elenco/NinjaKiwi.jpg" alt="Ninja" class="mb-2 player-img rounded">
+          <img src="public/assets/img/line-up/NinjaKiwi.jpg" alt="Ninja" class="mb-2 player-img rounded">
         </a>
         <h4 class="text-dark text-center custom-h4 ">NinjaKiwi</h4>
         <div class="bg-darker text-light border-darkest rounded p-2 mb-2"> <!-- Caixa com informações do jogador -->
@@ -285,7 +291,7 @@
 
       <div class="col player-col ">
         <a href="https://lol.fandom.com/wiki/Damage" target="_blank">
-          <img src="public/assets/img/elenco/Damage.jpg" alt="Damage" class="mb-2 player-img rounded">
+          <img src="public/assets/img/line-up/Damage.jpg" alt="Damage" class="mb-2 player-img rounded">
         </a>
         <h4 class="text-dark text-center custom-h4 ">Damage</h4>
         <div class="bg-darker text-light border-darkest rounded p-2 mb-2"> <!-- Caixa com informações do jogador -->
@@ -302,7 +308,7 @@
   </article><!--/end Line up atual -->
   
  
-  <article class="container m-auto mt-3 container-background rounded" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!-- Musica -->
+  <article class="container m-auto mt-3 dark rounded" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);"><!-- Musica -->
     <Div class="row bg-light">
       <h2 class="col-md-12 mt-1 text-dark bg-light text-center text-uppercase ">INTZ MÚSICAS!</h2>
     </Div>   
@@ -388,14 +394,18 @@
         </div>
         <div class="col-6 paragrafo-especifico">
           <h4 class="text-light text-uppercase">MANO YI INTZ</h4>
-          <span class="animation-line m-auto "></span>
+          <span class="animation-line-pink m-auto "></span>
           <p class="lead text-light paragrafo-especifico">
               <bold class="fw-bold text-uppercase">Ano de lançamento:</bold> 2015 <br>
               <bold class="fw-bold text-uppercase">Realização:</bold> Pato Papão<br>
               <bold class="fw-bold text-uppercase">Sinopse:</bold>
               Esta música é uma homenagem à campanha da INTZ EXODIA no CBLOL .
               Destaca a jornada da equipe de "underdogs" ao sucesso, exaltando as habilidades e contribuições de cada jogador.
-              A música também ressalta a perseverança e a determinação na busca pela vitória.<a href="https://youtu.be/ynXUK7iU36s?si=-LknZLSaABVJ4HhN" target="_blank" class="btn btn-md btn-custom branco">Video original</a><br>
+              A música também ressalta a perseverança e a determinação na busca pela vitória.
+              <a 
+              href="https://youtu.be/ynXUK7iU36s?si=-LknZLSaABVJ4HhN" 
+              target="_blank" 
+              class="btn btn-md btn-custom branco">Video original</a><br>
           </p>
         </div>
       </div>
@@ -411,7 +421,7 @@
         </div>
         <div class="col-6 paragrafo-especifico">
           <h4 class="text-light text-uppercase">Força Intrepida </h4>
-          <span class="animation-line m-auto "></span>
+          <span class="animation-line-pink m-auto "></span>
           <p class="lead text-light paragrafo-especifico">
               <bold class="fw-bold text-uppercase">Ano de lançamento:</bold> 2017 <br>
               <bold class="fw-bold text-uppercase">Realização:</bold>Yuri Black<br>
@@ -425,13 +435,13 @@
   <!-- Tabs content -->
  </article><!--/end Musica -->
 
- <article class="card container m-auto mt-3 container-background rounded" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
+ <article class="card container m-auto mt-3 dark rounded" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
   <div class="card-header bg-danger mt-2">
     INTZ É ETERNA!
   </div>
   <div class="card-body ">
     <blockquote class="blockquote bg-dark mb-0 lead">
-      <p class="lead texto p-2 container-background">Assim como nos esportes tradicionais, 
+      <p class="lead text-light p-2 dark">Assim como nos esportes tradicionais, 
         o e-sport é cíclico: em um momento, você está no topo; no outro, pode se encontrar no fundo do poço.
          É essencial lembrar a grandiosidade da INTZ e toda a sua história.<br><br>
 
@@ -451,7 +461,7 @@
   <footer class="container-fluid mt-2"><!--Start Rodapé-->
     <div class="row">
       <div class="col-lg-2  d-none d-md-block" >
-        <img  class="px-4" src="public/assets/img/apollo.png" width="142">
+        <img  class="px-4" src="public/assets/img/footer/apollo.png" width="142">
       </div>
       <div class="col-lg-2 organizacao "><!--Ul Organização-->
         <h4>Organização</h4>
