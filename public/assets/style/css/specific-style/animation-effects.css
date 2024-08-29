@@ -1,0 +1,92 @@
+.circle {
+  /* Border-Radius for article titulos */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  border: 2px solid transparent; /* Transparent border initially */
+  transition: border 0.1s ease; /* Smooth transition */
+}
+
+.circle:hover {
+  border: 5px solid #0058fc; /* White border on hover */
+  transform: scale(1.1); /* Zoom in slightly on hover */
+  filter: grayscale(0.5) brightness(1.2); /* Grayscale and brightness on hover */
+}
+
+
+/* Linha animada 1
+-----------------------------------------*/
+.animation-line-pink::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #f45687;
+  animation: border-pink 2s linear infinite;
+}
+
+@keyframes border-pink {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #fc6998;
+  }
+}
+
+/* Linha animada 2
+-----------------------------------------*/
+
+.animation-line-gold::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color:#e99c0d; 
+  animation: border-gold 2s linear infinite;
+}
+
+@keyframes border-gold {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #e99c0d;
+  }
+}
+/* Linha animada 3
+-----------------------------------------*/
+
+.animation-line-bw::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #5c5c5c;
+  animation: border-bw 2s linear infinite;
+}
+
+@keyframes border-bw {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
