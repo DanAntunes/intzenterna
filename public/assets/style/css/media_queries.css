@@ -39,6 +39,13 @@
    max-width: 100%;
    height: auto;
 }
+.sombra{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.idol{
+  height: 90%;
+}
 
 }
 
