@@ -1,0 +1,26 @@
+// Definição do mixin
+@mixin img($path) {
+  position: relative;
+  height: 100%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-image: url($path);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+// Uso do mixin
+.img-1 { @include img('../../../img/parallax-img/parallax-2015/campeao-2015.png'); }
+.img-2 { @include img('../../../img/parallax-img/parallax-2015/jogadores perfilados.jpg'); }
+.img-3 { @include img('../../../img/parallax-img/parallax-2015/micao.jpg'); }
+.img-4 { @include img('../../../img/parallax-img/parallax-2015/jockster.jpg'); }
+.img-5 { @include img('../../../img/parallax-img/parallax-2015/yang.jpg'); }
+.img-6 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-7 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-8 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-9 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-10 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-11 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-12 { @include img('../../../img/parallax-img/parallax-2015/'); }
+.img-13 { @include img('../../../img/parallax-img/parallax-2015/'); }
