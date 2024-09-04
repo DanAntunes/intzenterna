@@ -16,7 +16,7 @@
     #c0c0c0 96%
   );
   width: 8em; /* Diminui a largura */
-  height: 3em; /* Diminui a altura */
+  height: 2.0em; /* Diminui a altura */
   border-radius: 10px;
   position: relative;
   animation: gradient 55s linear infinite;
