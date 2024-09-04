@@ -46,6 +46,10 @@
 .idol{
   height: 90%;
 }
+.navbar-light .navbar-nav {
+  padding-top: 10px;
+  padding-left: 15px; 
+}
 
 }
 
