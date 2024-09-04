@@ -6,35 +6,18 @@ nav.navbar-transparente {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.astro{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 22%;
-    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-}
-
 .logo {
      filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
-.rubik-mono-one-regular {
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-}
-
 .navbar-light .navbar-nav {
-    padding-left: 25px; 
+    padding-left: 15px; 
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
-    font-size: 1.4em; /* Aumenta o tamanho do texto */
-    margin-right: 8px; /* Adiciona espaçamento à direita */
-    
-    
+    margin-right: 8px;
+    text-transform: uppercase;
 }
 
 header .navbar-light .navbar-nav .nav-link:hover{
