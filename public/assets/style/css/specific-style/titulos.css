@@ -1,29 +1,10 @@
 /* Padrao */
 
 html,
-body,
-#home {
+body {
   height: 100%;
   overflow-x: hidden;
   color: aliceblue;
-}
-
-/* Header e Navbar */
-header {
-  background: #191919;
-}
-
-.navbar-nav .nav-link {
-  color: #bfbebe;
-}
-
-.navbar-toggler {
-  color: rgba(255, 255, 255, 0.986);
-  padding: 4px;
-}
-
-.navbar-toggler-icon{
-  color: white;
 }
 /* Body */
 
