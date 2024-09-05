@@ -1,19 +1,17 @@
 /* Layout
 --------------------------------------------*/
 html,
-body,
-#home {
+body {
   height: 100%;
   overflow-x: hidden;
 }
 
-header {
-  background: linear-gradient(50deg, #5e5d5d, #f2f1f3);
-  background-attachment: fixed;
-}
-
 body {
   background:#191919;
+  background-image: url('../../img/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family: JetBrains Mono;
   padding: 0;
   margin: 0;
@@ -46,6 +44,10 @@ body {
 
 .dark {
   background-color: #191919;
+}
+
+.darkness {
+  background-color: #111111;
 }
 
 input::placeholder {
