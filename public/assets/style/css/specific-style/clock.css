@@ -15,9 +15,9 @@
     #808080 84%,
     #c0c0c0 96%
   );
-  width: 8em; /* Diminui a largura */
-  height: 2.0em; /* Diminui a altura */
-  border-radius: 10px;
+  width: 7.2em; /* Diminui a largura */
+  height: 2.4em; /* Diminui a altura */
+  border-radius: 5px;
   position: relative;
   animation: gradient 55s linear infinite;
 }
