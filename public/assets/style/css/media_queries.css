@@ -1,4 +1,18 @@
 @media (max-width: 575.98px) { 
+.img-8 {
+  background-size: cover;
+  background-position: 40% 45%;
+}
+
+.img-11 {
+  background-size: cover;
+  background-position: 20% 45%;
+}
+
+.img-12 {
+  background-size: cover;
+  background-position: 43% 45%;
+}
 
 /* Responsivo da Line Up atual
 ------------------------------------------*/
