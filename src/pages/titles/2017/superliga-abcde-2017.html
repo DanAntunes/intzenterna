@@ -14,12 +14,12 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
      <!-- Normalize CSS -->
      <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/normalize.css">
-     <!--Style custom-->
-     <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/style.css">
-     <!--Style custom Header - Navbar -->
+     <!-- Style custom Navbar - header -->
      <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/navbar.css">
-     <!--Style custom Header - Clock -->
-     <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/specific-style/clock.css">
+     <!--Style custom titulos - body -->
+     <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/specific-style/titulos.css">
+     <!--Style custom - Parallax -->
+     <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/specific-style/parallax.css">
      <!--Style custom Footer-->
      <link rel="stylesheet" type="text/css" href="../../../../public/assets/style/css/footer.css">
      <!-- Media Queries -->
@@ -39,12 +39,12 @@
 </head>
 
 <body>
-<header><!-- Start header -->
-  <nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+<header style="box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);"><!-- Start header -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-transparente">
     <div class="container d-flex flex-row">
     <span>
-     <a href="../../../../index.html" class="navbar-brand logo">
-       <img src="../../../../public/assets/img/header/logo.png" width="142" alt="INTZ logo">
+     <a href="../../../../index.html" class="navbar-brand">
+       <img src="../../../../public/assets/img/header/logo.png" class="logo" alt="INTZ logo">
      </a>
     </span>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
     </button>
 
     <div class="collapse navbar-collapse  justify-content-center" id="navegacao">
-      <ul class="navbar-nav rubik-mono-one-regular">
+      <ul class="navbar-nav text-uppercase">
 
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="../../../../historia.html">História</a>
@@ -66,28 +66,15 @@
           <a class="nav-link" href="../../../../idolo.html">Ídolos</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Explorar
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/src/pages/dropdown/curiosidades.html">Curiosidades</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/src/pages/dropdown/sobre.html">Sobre</a></li>
-          </ul>
-        </li>
 
       </ul>
     </div>
-      <div class=" ml-5 time d-none d-lg-block rgb-borda ">
-        <div class="clock" id="time">12:00:00</div>
-    </div>
-    </div>
-    </div><!--/fim nav -->
+    
+  </nav><!--/fim nav -->
 </header><!--/fim header-->
 
-<main class="p-0 bg-img cover-background" style="background-image: url(https://bootdey.com/img/Content/bg1.jpg); filter: grayscale(100%);">
-  
+<main class="">
+    
   <article class="container-fluid d-flex flex-column">
     
     <section class="row align-items-center justify-content-center min-vh-100">
@@ -98,7 +85,7 @@
                 <h2 class="mb-4 text-white">Desculpe, algo deu errado!</h2>
                 <p class="w-sm-80 mx-auto mb-4 text-white">A página ainda está em desenvolvimento. Enquanto isso, aproveite o conteúdo já disponível.</p>
                 <span>
-                    <a href="../../../../index.html" class="btn btn-info btn-lg me-sm-2 mb-2 mb-sm-0">Retorne a página principal</a>
+                    <a href="../../../../index.html" class="btn btn-danger btn-lg me-sm-2 mb-2 mb-sm-0">Retorne a página principal</a>
                 </span>
             </div>
         </div>
