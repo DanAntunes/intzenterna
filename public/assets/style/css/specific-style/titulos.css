@@ -54,6 +54,11 @@ p {
   text-transform: uppercase;
 }
 
+.conteudo-titulo-2 {
+  color: #fff;
+  background-color: #111;
+  letter-spacing: 5px;
+}
 .vertical-parallax {
   position: relative;
   height: 100vh;
@@ -66,7 +71,7 @@ p {
   right: 0;
   width: 30%;
   height: 100%;
-  background: url('../../../../assets/img/parallax-img/parallax-2015/lol-intz-nova-formacao.jpg') no-repeat center center;
+  background: url('../../../../assets/img/parallax-img/parallax-2015/circuito-desafiante/INTZ-Red-WinterPromotion2015.webp') no-repeat center center;
   background-size: cover;
   filter: grayscale(100%);
   transform: translateX(10%);
@@ -80,7 +85,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../../../assets/img/parallax-img/parallax-2015/img-3.jpg') no-repeat center center;
+  background: url('../../../../assets/img/parallax-img/parallax-2015/cblol/img-3.jpg') no-repeat center center;
   background-size: cover;
   transform: translateX(-10%);
   animation: parallax-right 10s infinite linear;
