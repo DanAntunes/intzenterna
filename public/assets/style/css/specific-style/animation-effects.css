@@ -1,17 +1,33 @@
 .circle {
-  /* Border-Radius for article titulos */
+ 
   width: 150px;
   height: 150px;
   border-radius: 50%;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
-  border: 2px solid transparent; /* Transparent border initially */
-  transition: border 0.1s ease; /* Smooth transition */
+  border: 2px solid transparent;
+  transition: border 0.1s ease; 
 }
 
 .circle:hover {
-  border: 5px solid #0058fc; /* White border on hover */
-  transform: scale(1.1); /* Zoom in slightly on hover */
-  filter: grayscale(0.5) brightness(1.2); /* Grayscale and brightness on hover */
+  border: 5px solid #0058fc;
+  transform: scale(1.1); 
+  filter: grayscale(0.5) brightness(1.2);
+}
+
+.circle-2 {
+
+  width: 225px;
+  height: 150px;
+  border-radius: 10%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  border: 2px solid transparent;
+  transition: border 0.1s ease; 
+}
+
+.circle-2:hover {
+  border: 5px solid #fc0000;
+  transform: scale(1.1); 
+  filter: grayscale(0.5) brightness(1.2);
 }
 
 
@@ -98,7 +114,7 @@
   display: block;
   width: 50%;
   height: 4px;
-  margin: 5px auto 10px auto; /* Centraliza o elemento */
+  margin: 5px auto 10px auto;
   background-color: #EC1B23;
   animation: border-red 2s linear infinite;
   justify-content: center;
