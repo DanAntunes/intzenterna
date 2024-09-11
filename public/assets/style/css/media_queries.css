@@ -1,4 +1,15 @@
 @media (max-width: 575.98px) { 
+/* Melhorando visibilidade do texto em telas menores
+-------------------------------------------------------------*/
+.conteudo {
+  color: #777;
+  font-size: 1.3rem; /* 1rem é igual ao tamanho da fonte base do documento */
+  line-height: 1.5;
+  padding: 6px;
+  background-color: rgba(16, 16, 16, 0.5);
+}
+/* Parallax
+-------------------------------------------------------------*/
 .img-8 {
   background-size: cover;
   background-position: 40% 45%;
