@@ -1,1 +1,0 @@
-*Nota: Este texto faz parte do site da INTZ, que está em construção. Com o tempo, ire atualizá-lo com mais informações e detalhes.*
