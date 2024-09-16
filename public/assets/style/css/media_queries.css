@@ -1,4 +1,7 @@
 @media (max-width: 575.98px) { 
+.style-img-champions {
+  margin-top: 10px;
+}
 /* Melhorando visibilidade do texto em telas menores
 -------------------------------------------------------------*/
 .conteudo {
