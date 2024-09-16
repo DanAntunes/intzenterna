@@ -127,3 +127,31 @@ p {
     display: inline-block;
     margin-left: 10px;
 }
+
+.style-img-champions {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  border: 2px solid black;
+  border: 2px solid transparent;
+  transition: border 0.1s ease; 
+}
+
+.style-img-champions:hover {
+  border: 3px solid #656668;
+  transform: scale(1.1); 
+  filter: grayscale(0.5) brightness(1.2);
+}
+
+.popover {
+  background-color: #f0f0f0; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+}
+
+.campeao + .popover {
+  color: #000; /* Cor do texto personalizada */
+}
+
+.popover-font-size{
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
