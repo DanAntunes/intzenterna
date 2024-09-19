@@ -6,10 +6,12 @@
 -------------------------------------------------------------*/
 .conteudo {
   color: #777;
-  font-size: 1.3rem; /* 1rem é igual ao tamanho da fonte base do documento */
-  line-height: 1.5;
-  padding: 6px;
   background-color: rgba(16, 16, 16, 0.5);
+  font-size: 1.2em;
+  text-align: start;
+  padding: 10px 15px;
+  word-spacing: 1px;
+  line-height: 1.6;
 }
 /* Parallax
 -------------------------------------------------------------*/
