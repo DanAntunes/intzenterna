@@ -161,3 +161,7 @@ p {
   margin: 0; 
 }
 
+.video{
+  width: 640px ;
+  height: 360px ;
+}
