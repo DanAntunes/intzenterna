@@ -1,4 +1,7 @@
 @media (max-width: 575.98px) { 
+.botao-next{
+  width: 110px;
+}
 .style-img-champions {
   margin-top: 10px;
 }
