@@ -165,3 +165,16 @@ p {
   width: 640px ;
   height: 360px ;
 }
+/* Estilização do glossario */
+.accordion-button {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+.accordion-button.collapsed {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.accordion-body {
+  background-color: #222222;
+  color: #FFFFFF;
+}
