@@ -696,19 +696,24 @@
 
       <article class="conteudo">
         <div class="container mt-5">
-          <h1 class="mb-4">Glossário</h1>
+          <h1 class="mb-4 text-light text-uppercase">Glossário</h1>
           <div class="accordion" id="glossario">
               <div class="accordion-item"><!--Primeira palavra-->
                   <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button text-uppercase" 
+                      <button class="accordion-button text-uppercase active" 
                       type="button" data-bs-toggle="collapse" 
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         Exodia
                       </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#glossario">
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#glossario">
                       <div class="accordion-body">
-                        
+                        <p>
+                          Você
+Copilot, o que é Exodia
+Copilot
+Exodia é um arquétipo de monstros do tipo Mago das Trevas na franquia Yu-Gi-Oh O membro mais famoso desse arquétipo é o Exodia the Forbidden One, que é conhecido por conceder uma vitória automática ao jogador assim que entra em campo
+                        </p>
                       </div>
                   </div>
               </div>
@@ -978,6 +983,8 @@
       const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl, {
       html: true
       })); 
+
+      
       </script>
   </body>
 </html>
