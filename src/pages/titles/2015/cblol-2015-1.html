@@ -1061,8 +1061,9 @@
         <section class="img-13">  <!-- Img Todos juntos com a taça -->
         </section>
         <section class="conteudo"> <!-- Encerramento -->
-          <h3 class="text-light">Estátistica do time na temporada.</h3>
-          <section class="container-fluid">
+          <h3 class="text-light">Estátisticas</h3>
+          <div class="container">
+            <h1 class="text-light">CBLOL 2015.1</h1>
             <div class="row">
                 <div class="col-md-6">
                     <h2>Aproveitamento da INTZ no 1º Split do CBLoL 2015</h2>
@@ -1070,14 +1071,14 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Estatísticas dos Jogadores</h2>
-                    <span>
+                    <div>
                         <button id="kdaBtn">KDA</button>
                         <button id="csBtn">CS</button>
-                    </span>
+                    </div>
                     <canvas id="playerStatsChart"></canvas>
                 </div>
             </div>
-          </section>
+        </div>
 
         </section>
       </article>
@@ -1147,15 +1148,98 @@
        
     
     <script src="../../../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script>
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl, {
-      html: true
-      })); 
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl, {
+    html: true
+    })); 
       
+    const winRateData = {
+    labels: ['Vitórias', 'Derrotas'],
+    datasets: [{
+        data: [76.8, 23.2],
+        backgroundColor: ['#4caf50', '#f44336']
+      }]
+    };
+
+    const winRateConfig = {
+    type: 'doughnut',
+    data: winRateData
+    };
+
+
+    const winRateChart = new Chart(
+    document.getElementById('winRateChart'),
+    winRateConfig
+    );
+
+
+    const playerStatsData = {
+    labels: ['Yang', 'Revolta', 'Tockers', 'Micao', 'Jockster'],
+    datasets: [{
+        label: 'KDA',
+        data: [5.7, 5.72, 5.42, 3.77, 4.65],
+        backgroundColor: '#42a5f5',
+    }, {
+        label: 'CS',
+        data: [295.68, 318.57, 256.52, 57.91, 105.34],
+        backgroundColor: '#66bb6a',
+      }]
+        
+    };
+
+
+    const playerStatsConfig = {
+  type: 'bar',
+  data: playerStatsData,
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 350, // Ajuste inicial para CS
+      }
+    },
+    layout: { // Add layout section for margin and padding
+      padding: {
+        left: 20, // Adjust as needed (in pixels)
+        right: 20,
+        top: 20,
+        bottom: 20
+      }
+    }
+  }
+};
+
+
+    const playerStatsChart = new Chart(
+        document.getElementById('playerStatsChart'),
+        playerStatsConfig
+    );
+
+
+    function updateChart(metric) {
+        if (metric === 'kda') {
+            playerStatsChart.data.datasets[0].hidden = false; // Mostrar KDA
+            playerStatsChart.data.datasets[1].hidden = true;  // Ocultar CS
+            playerStatsChart.options.scales.y.max = 10; // Ajustar máximo para KDA
+        } else {
+            playerStatsChart.data.datasets[0].hidden = true;  // Ocultar KDA
+            playerStatsChart.data.datasets[1].hidden = false; // Mostrar CS
+            playerStatsChart.options.scales.y.max = 350; // Ajustar máximo para CS
+        }
+        playerStatsChart.update(); // Atualiza o gráfico
+    }
+
+    updateChart('kda');
+
+    document.getElementById('kdaBtn').addEventListener('click', () => updateChart('kda'));
+    document.getElementById('csBtn').addEventListener('click', () => updateChart('cs'));
+
       </script>
   </body>
 </html>
