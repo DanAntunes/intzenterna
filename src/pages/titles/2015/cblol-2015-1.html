@@ -1060,27 +1060,45 @@
       <article class="p-1"><!-- Estatisticas e finalização do conteudo-->
         <section class="img-13">  <!-- Img Todos juntos com a taça -->
         </section>
+
         <section class="conteudo"> <!-- Encerramento -->
-          <h3 class="text-light">Estátisticas</h3>
-          <div class="container">
-            <h1 class="text-light">CBLOL 2015.1</h1>
-            <div class="row">
+          <h3 class="text-light">Estatísticas</h3>
+          <section class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h2 class="text-light mt-5">Aproveitamento da INTZ</h2>
+                      <canvas class="mt-4" id="winRateChart"></canvas>
+                  </div>
+                  <div class="col-md-6">
+                      <h2 class="mt-5 text-light">Estatísticas dos Jogadores</h2>
+                      <div class="mt-5">
+                          <button class="btn btn-outline-light" id="kdaBtn">KDA</button>
+                          <button class="btn btn-outline-light" id="csBtn">CS</button>
+                      </div>
+                      <canvas class="mt-2" id="playerStatsChart"></canvas>
+                  </div>
+          </section>
+          <section class="container">        
+            <div class="row mt-5">
+              <div class="col-md-6">
+                  <h2 class="mt-5 text-light">Aproveitamento em Séries</h2>
+                  <canvas class="mt-4" id="seriesChart"></canvas>
+              </div>
                 <div class="col-md-6">
-                    <h2>Aproveitamento da INTZ no 1º Split do CBLoL 2015</h2>
-                    <canvas id="winRateChart"></canvas>
-                </div>
-                <div class="col-md-6">
-                    <h2>Estatísticas dos Jogadores</h2>
-                    <div>
-                        <button id="kdaBtn">KDA</button>
-                        <button id="csBtn">CS</button>
+                    <h2 class="mt-5 text-light">Campeões Jogados</h2>
+                    <div class="mt-4">
+                        <button class="btn btn-outline-light" id="yangBtn">Yang</button>
+                        <button class="btn btn-outline-light" id="revoltaBtn">Revolta</button>
+                        <button class="btn btn-outline-light" id="tockersBtn">Tockers</button>
+                        <button class="btn btn-outline-light" id="micaoBtn">Micao</button>
+                        <button class="btn btn-outline-light" id="jocksterBtn">Jockster</button>
                     </div>
-                    <canvas id="playerStatsChart"></canvas>
+                    <canvas class="mt-4" id="championStatsChart"></canvas>
                 </div>
             </div>
-        </div>
-
+          </section>
         </section>
+
       </article>
 
       <article class="vertical-parallax">
@@ -1158,27 +1176,25 @@
     html: true
     })); 
       
-    const winRateData = {
+const winRateData = {
     labels: ['Vitórias', 'Derrotas'],
     datasets: [{
-        data: [76.8, 23.2],
+        data: [13,2],
         backgroundColor: ['#4caf50', '#f44336']
-      }]
-    };
+    }]
+};
 
-    const winRateConfig = {
+const winRateConfig = {
     type: 'doughnut',
     data: winRateData
-    };
+};
 
-
-    const winRateChart = new Chart(
+const winRateChart = new Chart(
     document.getElementById('winRateChart'),
     winRateConfig
-    );
+);
 
-
-    const playerStatsData = {
+const playerStatsData = {
     labels: ['Yang', 'Revolta', 'Tockers', 'Micao', 'Jockster'],
     datasets: [{
         label: 'KDA',
@@ -1188,57 +1204,155 @@
         label: 'CS',
         data: [295.68, 318.57, 256.52, 57.91, 105.34],
         backgroundColor: '#66bb6a',
-      }]
-        
-    };
-
-
-    const playerStatsConfig = {
-  type: 'bar',
-  data: playerStatsData,
-  options: {
-    responsive: true,
-    scales: {
-      y: {
-        beginAtZero: true,
-        max: 350, // Ajuste inicial para CS
-      }
-    },
-    layout: { 
-      padding: {
-        left: 20, 
-        right: 20,
-        top: 20,
-        bottom: 20
-      }
-    }
-  }
+    }]
 };
 
-
-    const playerStatsChart = new Chart(
-        document.getElementById('playerStatsChart'),
-        playerStatsConfig
-    );
-
-
-    function updateChart(metric) {
-        if (metric === 'kda') {
-            playerStatsChart.data.datasets[0].hidden = false; // Mostrar KDA
-            playerStatsChart.data.datasets[1].hidden = true;  // Ocultar CS
-            playerStatsChart.options.scales.y.max = 10; // Ajustar máximo para KDA
-        } else {
-            playerStatsChart.data.datasets[0].hidden = true;  // Ocultar KDA
-            playerStatsChart.data.datasets[1].hidden = false; // Mostrar CS
-            playerStatsChart.options.scales.y.max = 350; // Ajustar máximo para CS
+const playerStatsConfig = {
+    type: 'bar',
+    data: playerStatsData,
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 350, // Ajuste inicial para CS
+            }
+        },
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 25
+            }
         }
-        playerStatsChart.update(); // Atualiza o gráfico
     }
+};
 
-    updateChart('kda');
+const playerStatsChart = new Chart(
+    document.getElementById('playerStatsChart'),
+    playerStatsConfig
+);
 
-    document.getElementById('kdaBtn').addEventListener('click', () => updateChart('kda'));
-    document.getElementById('csBtn').addEventListener('click', () => updateChart('cs'));
+// Novo gráfico de séries
+const seriesData = {
+    labels: ['Vitórias', 'Empates', 'Derrotas'],
+    datasets: [{
+        data: [13, 2, 0],
+        backgroundColor: ['#4caf50', '#ffeb3b', '#f44336'],
+    }]
+};
+
+const seriesConfig = {
+    type: 'doughnut',
+    data: seriesData,
+};
+
+const seriesChart = new Chart(
+    document.getElementById('seriesChart'),
+    seriesConfig
+);
+
+function updateChart(metric) {
+    if (metric === 'kda') {
+        playerStatsChart.data.datasets[0].hidden = false; // Mostrar KDA
+        playerStatsChart.data.datasets[1].hidden = true;  // Ocultar CS
+        playerStatsChart.options.scales.y.max = 10; // Ajustar máximo para KDA
+    } else {
+        playerStatsChart.data.datasets[0].hidden = true;  // Ocultar KDA
+        playerStatsChart.data.datasets[1].hidden = false; // Mostrar CS
+        playerStatsChart.options.scales.y.max = 350; // Ajustar máximo para CS
+    }
+    playerStatsChart.update(); // Atualiza o gráfico
+}
+
+updateChart('kda');
+
+document.getElementById('kdaBtn').addEventListener('click', () => updateChart('kda'));
+document.getElementById('csBtn').addEventListener('click', () => updateChart('cs'));
+
+// Dados dos campeões e taxas de vitória para cada jogador
+const championsData = {
+    'Yang': {
+        labels: ['Maokai', 'Gnar', 'Lissandra', 'Rumble', 'Irelia'],
+        data: [75, 60, 80, 50, 40],
+        backgroundColor: '#42a5f5'
+    },
+    'Revolta': {
+        labels: ['Lee Sin', 'Rek\'Sai', 'Jarvan IV', 'Nidalee', 'Gragas'],
+        data: [85, 70, 55, 60, 65],
+        backgroundColor: '#66bb6a'
+    },
+    'Tockers': {
+        labels: ['Ahri', 'Orianna', 'Zed', 'LeBlanc', 'Lulu'],
+        data: [78, 82, 68, 74, 66],
+        backgroundColor: '#ff7043'
+    },
+    'Micao': {
+        labels: ['Lucian', 'Jinx', 'Sivir', 'Caitlyn', 'Kalista'],
+        data: [70, 62, 75, 55, 60],
+        backgroundColor: '#ab47bc'
+    },
+    'Jockster': {
+        labels: ['Thresh', 'Annie', 'Leona', 'Janna', 'Morgana'],
+        data: [65, 60, 55, 80, 58],
+        backgroundColor: '#26a69a'
+    }
+};
+
+// Configuração inicial do gráfico dos campeões
+const championStatsData = {
+    labels: [], // Será preenchido dinamicamente
+    datasets: [{
+        label: 'Taxa de Vitória (%)',
+        data: [],
+        backgroundColor: '' // Será preenchido dinamicamente
+    }]
+};
+
+const championStatsConfig = {
+    type: 'bar',
+    data: championStatsData,
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 100 // As taxas de vitória são representadas em porcentagem
+            }
+        },
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 25
+            }
+        }
+    }
+};
+
+// Criação do gráfico dos campeões
+const championStatsChart = new Chart(
+    document.getElementById('championStatsChart'),
+    championStatsConfig
+);
+
+// Função para atualizar o gráfico com base no jogador selecionado
+function updateChampionStats(player) {
+    const data = championsData[player];
+    championStatsChart.data.labels = data.labels;
+    championStatsChart.data.datasets[0].data = data.data;
+    championStatsChart.data.datasets[0].backgroundColor = data.backgroundColor;
+    championStatsChart.update();
+}
+
+// Event listeners para os botões de cada jogador
+document.getElementById('yangBtn').addEventListener('click', () => updateChampionStats('Yang'));
+document.getElementById('revoltaBtn').addEventListener('click', () => updateChampionStats('Revolta'));
+document.getElementById('tockersBtn').addEventListener('click', () => updateChampionStats('Tockers'));
+document.getElementById('micaoBtn').addEventListener('click', () => updateChampionStats('Micao'));
+document.getElementById('jocksterBtn').addEventListener('click', () => updateChampionStats('Jockster'));
 
       </script>
   </body>
