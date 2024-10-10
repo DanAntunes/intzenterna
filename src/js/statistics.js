@@ -2,7 +2,7 @@
 const winRateData = {
   labels: ['Vitórias', 'Derrotas'],
   datasets: [{
-      data: [13,2],
+      data: [19,2],
       backgroundColor: ['#4caf50', '#f44336']
   }]
 };
@@ -32,7 +32,7 @@ const playerStatsData = {
   labels: ['Yang', 'Revolta', 'Tockers', 'Micao', 'Jockster'],
   datasets: [{
       label: 'KDA',
-      data: [5.7, 5.72, 5.42, 3.77, 4.65],
+      data: [5.94, 5.72, 5.42, 3.77, 4.65],
       backgroundColor: '#42a5f5',
   }, {
       label: 'CS',
@@ -72,7 +72,7 @@ const playerStatsChart = new Chart(
 const seriesData = {
   labels: ['Vitórias', 'Empates', 'Derrotas'],
   datasets: [{
-      data: [13, 2, 0],
+      data: [8, 2, 0],
       backgroundColor: ['#4caf50', '#ffeb3b', '#f44336'],
   }]
 };
@@ -120,28 +120,28 @@ document.getElementById('csBtn').addEventListener('click', () => updateChart('cs
 // Dados dos campeões e taxas de vitória para cada jogador
 const championsData = {
   'Yang': {
-      labels: ['Maokai', 'Gnar', 'Lissandra', 'Rumble', 'Irelia'],
-      data: [75, 60, 80, 50, 40],
+      labels: ['Rumble', 'Gnar', 'Maokai', 'Sion', 'Lissandra'],
+      data: [100, 100,100, 100, 50],
       backgroundColor: '#42a5f5'
   },
   'Revolta': {
-      labels: ['Lee Sin', 'Rek\'Sai', 'Jarvan IV', 'Nidalee', 'Gragas'],
-      data: [85, 70, 55, 60, 65],
+      labels: ['Lee Sin', 'Jarvan IV', 'Rek/Sai', 'Gragas', 'Nidalee'],
+      data: [100, 100, 100, 100, 50],
       backgroundColor: '#66bb6a'
   },
   'Tockers': {
-      labels: ['Ahri', 'Orianna', 'Zed', 'LeBlanc', 'Lulu'],
-      data: [78, 82, 68, 74, 66],
+      labels: ['Azir', 'Kassadin', 'Xerath', 'Cassiopeia', 'Lissandra'],
+      data: [100, 100, 33.33, 100, 100],
       backgroundColor: '#ff7043'
   },
   'Micao': {
-      labels: ['Lucian', 'Jinx', 'Sivir', 'Caitlyn', 'Kalista'],
-      data: [70, 62, 75, 55, 60],
+      labels: ['Corki', 'Kalista', 'Graves', 'Ezreal', 'Jinx'],
+      data: [100, 80, 100, 50, 100],
       backgroundColor: '#ab47bc'
   },
   'Jockster': {
-      labels: ['Thresh', 'Annie', 'Leona', 'Janna', 'Morgana'],
-      data: [65, 60, 55, 80, 58],
+      labels: ['Leona', 'Thresh', 'Nami', 'Lulu', 'Janna'],
+      data: [66.67, 80, 100, 100, 100],
       backgroundColor: '#26a69a'
   }
 };
