@@ -32,11 +32,11 @@ const playerStatsData = {
   labels: ['Yang', 'Revolta', 'Tockers', 'Micao', 'Jockster'],
   datasets: [{
       label: 'KDA',
-      data: [5.94, 5.72, 5.42, 3.77, 4.65],
+      data: [5.94, 6.18, 6.71, 6.83, 3.99],
       backgroundColor: '#42a5f5',
   }, {
-      label: 'CS',
-      data: [295.68, 318.57, 256.52, 57.91, 105.34],
+      label: 'CS - Overall',
+      data: [256.18, 117.67, 320.87, 279.05, 30.10],
       backgroundColor: '#66bb6a',
   }]
 };
