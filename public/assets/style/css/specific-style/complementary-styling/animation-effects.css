@@ -1,0 +1,133 @@
+.circle {
+ 
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  border: 2px solid transparent;
+  transition: border 0.1s ease; 
+}
+
+.circle:hover {
+  border: 5px solid #0058fc;
+  transform: scale(1.1); 
+  filter: grayscale(0.5) brightness(1.2);
+}
+
+.circle-2 {
+
+  width: 225px;
+  height: 150px;
+  border-radius: 10%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  border: 2px solid transparent;
+  transition: border 0.1s ease; 
+}
+
+.circle-2:hover {
+  border: 5px solid #fc0000;
+  transform: scale(1.1); 
+  filter: grayscale(0.5) brightness(1.2);
+}
+
+
+/* Linha animada 1
+-----------------------------------------*/
+.animation-line-pink::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #f45687;
+  animation: border-pink 2s linear infinite;
+}
+
+@keyframes border-pink {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #fc6998;
+  }
+}
+
+/* Linha animada 2
+-----------------------------------------*/
+
+.animation-line-gold::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color:#e99c0d; 
+  animation: border-gold 2s linear infinite;
+}
+
+@keyframes border-gold {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #e99c0d;
+  }
+}
+/* Linha animada 3
+-----------------------------------------*/
+
+.animation-line-bw::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #5c5c5c;
+  animation: border-bw 2s linear infinite;
+}
+
+@keyframes border-bw {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #0a0a09;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+/* Linha animada 4
+-----------------------------------------*/
+.animation-line-red::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4px;
+  margin: 5px auto 10px auto;
+  background-color: #EC1B23;
+  animation: border-red 2s linear infinite;
+  justify-content: center;
+}
+
+@keyframes border-red {
+  0% {
+    background-color: #fff7;
+  }
+  50% {
+    background-color: #e10909;
+  }
+  100% {
+    background-color: #EC1B23;
+  }
+}
