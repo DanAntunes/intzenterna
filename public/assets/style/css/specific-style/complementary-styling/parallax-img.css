@@ -5,7 +5,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/campeao-2015.png");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/campeao-2015.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -17,7 +17,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/jogadores perfilados.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/jogadores perfilados.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,7 +29,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/micao.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/micao.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -41,7 +41,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/jockster.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/jockster.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -53,7 +53,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/yang.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/yang.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -65,7 +65,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/tockers.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/tockers.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -77,7 +77,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/revolta.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/revolta.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -89,7 +89,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/img.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/img.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -101,7 +101,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/img-7.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/img-7.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -113,7 +113,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/img-5.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/img-5.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -125,7 +125,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/abaxial.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/abaxial.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -137,7 +137,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/finalizacao.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/finalizacao.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -149,7 +149,7 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/foto-com-a-taça.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/foto-com-a-taça.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -161,10 +161,10 @@
   height: 100vh; /* Ocupa toda a altura da viewport */
   opacity: 0.7;
   background-repeat: no-repeat;
-  background-image: url("../../../img/conteudo-titulos/2015/cblol/parallax-2015/img-2.jpg");
+  background-image: url("../../../../img/conteudo-titulos/2015/cblol/parallax-2015/img-2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/*# sourceMappingURL=parallax.css.map */
+/*# sourceMappingURL=parallax-img.css.map */
