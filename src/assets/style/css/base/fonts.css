@@ -1,0 +1,60 @@
+/* Fonte local JetBrains Mono (usada nos subtítulos) */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/src/assets/jetbrains-mono.woff2') format('woff2'),
+       url('/src/assets/jetbrains-mono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fonte local JetBrains Mono Bold (subtítulos) */
+@font-face {
+  font-family: 'JetBrains Mono Bold';
+  src: url('/src/assets/jetbrains-mono-bold.woff2') format('woff2'),
+       url('/src/assets/jetbrains-mono-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Fonte Iosevka para títulos */
+/* Baixe Iosevka: https://github.com/be5invis/Iosevka/releases */
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/src/assets/iosevka.woff2') format('woff2'),
+       url('/src/assets/iosevka.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Fonte Inter para textos/paragraphos */
+/* Baixe Inter: https://rsms.me/inter/ */
+@font-face {
+  font-family: 'Inter';
+  src: url('/src/assets/inter.woff2') format('woff2'),
+       url('/src/assets/inter.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Variáveis globais para fontes */
+:root {
+  --f-title: 'Iosevka', monospace;
+  --f-subtitle: 'JetBrains Mono Bold', monospace;
+  --f-body: 'Inter', sans-serif;
+}
+
+/* Aplicando as fontes */
+body {
+  font-family: var(--font-body);
+}
+
+h1, .title {
+  font-family: var(--font-title);
+}
+
+h2, h3, .subtitle {
+  font-family: var(--font-subtitle);
+}
+h4, h5, h6 {
+  font-family: var(--font-subtitle);
+}
