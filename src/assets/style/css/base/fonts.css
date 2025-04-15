@@ -1,8 +1,7 @@
 /* Fonte local JetBrains Mono (usada nos subtítulos) */
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('/src/assets/jetbrains-mono.woff2') format('woff2'),
-       url('/src/assets/jetbrains-mono.woff') format('woff');
+  src: url('../../../fonts/jetbrains/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,8 +9,7 @@
 /* Fonte local JetBrains Mono Bold (subtítulos) */
 @font-face {
   font-family: 'JetBrains Mono Bold';
-  src: url('/src/assets/jetbrains-mono-bold.woff2') format('woff2'),
-       url('/src/assets/jetbrains-mono-bold.woff') format('woff');
+  src: url('../../../fonts/jetbrains/JetBrainsMono-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -19,8 +17,7 @@
 /* Fonte Iosevka para títulos */
 @font-face {
   font-family: 'Iosevka';
-  src: url('/src/assets/iosevka.woff2') format('woff2'),
-       url('/src/assets/iosevka.woff') format('woff');
+  src: url('../../../fonts/iosevka/Iosevka-Regular.ttc') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -28,8 +25,7 @@
 /* Fonte Iosevka para títulos */
 @font-face {
   font-family: 'Iosevka Bold';
-  src: url('/src/assets/iosevka-bold.woff2') format('woff2'),
-       url('/src/assets/iosevka-bold.woff') format('woff');
+  src: url('../../../fonts/iosevka/Iosevka-Bold.ttc') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -37,8 +33,7 @@
 /* Fonte Inter para textos/paragraphos */
 @font-face {
   font-family: 'Inter';
-  src: url('/src/assets/inter.woff2') format('woff2'),
-       url('/src/assets/inter.woff') format('woff');
+  src: url('../../../fonts/inter/Inter-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -54,16 +49,20 @@
 
 /* Aplicando as fontes */
 body {
-  font-family: var(--font-body);
+  font-family: var(--f-body);
 }
 
 h1, .title {
-  font-family: var(--font-title);
+  font-family: var(--f-title);
+}
+
+h1, .title-bold {
+  font-family: var(--f2-title);
 }
 
 h2, h3, .subtitle {
-  font-family: var(--font-subtitle);
+  font-family: var(--f-subtitle);
 }
 h4, h5, h6 {
-  font-family: var(--font-subtitle);
+  font-family: var(--f2-subtitle);
 }
