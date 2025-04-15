@@ -17,7 +17,6 @@
 }
 
 /* Fonte Iosevka para títulos */
-/* Baixe Iosevka: https://github.com/be5invis/Iosevka/releases */
 @font-face {
   font-family: 'Iosevka';
   src: url('/src/assets/iosevka.woff2') format('woff2'),
@@ -26,8 +25,16 @@
   font-style: normal;
 }
 
+/* Fonte Iosevka para títulos */
+@font-face {
+  font-family: 'Iosevka Bold';
+  src: url('/src/assets/iosevka-bold.woff2') format('woff2'),
+       url('/src/assets/iosevka-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Fonte Inter para textos/paragraphos */
-/* Baixe Inter: https://rsms.me/inter/ */
 @font-face {
   font-family: 'Inter';
   src: url('/src/assets/inter.woff2') format('woff2'),
@@ -38,8 +45,10 @@
 
 /* Variáveis globais para fontes */
 :root {
-  --f-title: 'Iosevka', monospace;
+  --f-title: 'Iosevka Bold', monospace;
+  --f2-title: 'Iosevka', monospace;
   --f-subtitle: 'JetBrains Mono Bold', monospace;
+  --f2-subtitle: 'JetBrains Mono', monospace;
   --f-body: 'Inter', sans-serif;
 }
 
