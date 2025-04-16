@@ -1,0 +1,28 @@
+/* _typography.css */
+:root {
+  --f-title: 'Iosevka Bold', monospace;
+  --f2-title: 'Iosevka', monospace;
+  --f-subtitle: 'JetBrains Mono Bold', monospace;
+  --f2-subtitle: 'JetBrains Mono', monospace;
+  --f-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--f-body);
+}
+
+h1, .title {
+  font-family: var(--f-title);
+}
+
+h1, .title-bold {
+  font-family: var(--f2-title);
+}
+
+h2, h3, .subtitle {
+  font-family: var(--f-subtitle);
+}
+
+h4, h5, h6 {
+  font-family: var(--f2-subtitle);
+}
