@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+  
+  #mainNavbar {
+    justify-content: center;
+  }
+  
+  .nav-item {
+    text-align: center;
+  }
+}
