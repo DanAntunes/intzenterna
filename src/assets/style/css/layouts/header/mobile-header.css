@@ -1,0 +1,54 @@
+/* Estilização base do navbar */
+#mainNavbar {
+  background: rgba(255, 255, 255, 0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  padding: 4px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Header visível: sem deslocamento */
+  transform: translateY(0);
+}
+
+/* Estado oculto: opacidade zero e deslocamento para cima */
+#mainNavbar.navbar-hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+/* Linha decorativa - sem alterações */
+#mainNavbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent 0%, #000 50%, transparent 100%);
+}
+
+/* Estilo dos links permanece inalterado */
+.nav-link {
+  color: #333 !important;
+  position: relative;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
