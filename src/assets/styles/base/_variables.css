@@ -8,10 +8,11 @@
   --text-color: #333;
 
   /* Typography */
-  --font-family: 'Arial', sans-serif;
-  --font-size-base: 16px;
-  --font-size-small: 14px;
-  --font-size-large: 20px;
+  --f-title: 'Iosevka Bold', monospace;
+  --f2-title: 'Iosevka', monospace;
+  --f-subtitle: 'JetBrains Mono Bold', monospace;
+  --f2-subtitle: 'JetBrains Mono', monospace;
+  --f-body: 'Inter', sans-serif;
 
   /* Spacing */
   --spacing-small: 8px;
