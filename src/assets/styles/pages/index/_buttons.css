@@ -41,7 +41,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   z-index: 1;
-  opacity: 0;
+  opacity: var(--after-opacity, 1);
 }
 .brilho2 {
   z-index: 5;
