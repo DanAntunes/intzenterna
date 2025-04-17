@@ -1,11 +1,3 @@
-/* _typography.css */
-:root {
-  --f-title: 'Iosevka Bold', monospace;
-  --f2-title: 'Iosevka', monospace;
-  --f-subtitle: 'JetBrains Mono Bold', monospace;
-  --f2-subtitle: 'JetBrains Mono', monospace;
-  --f-body: 'Inter', sans-serif;
-}
 
 body {
   font-family: var(--f-body);
