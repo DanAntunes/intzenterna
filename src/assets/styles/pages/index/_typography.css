@@ -1,0 +1,22 @@
+/* Efeito Shine para o parágrafo */
+.typography-shine {
+  display: inline-block; /* Alterado para inline-block */
+  padding: 12px 0; /* Ajuste do padding vertical */
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-size: 200% auto; /* Aumentamos o tamanho do gradiente */
+  background-position: 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear; /* Aumentamos a duração */
+  font-family: var(--f-subtitle);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  width: 100%; /* Garante largura total */
+  text-align: center; /* Centraliza o texto */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  -webkit-filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
