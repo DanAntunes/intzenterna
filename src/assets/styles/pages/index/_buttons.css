@@ -1,102 +1,107 @@
-/* Botão refinado */
-.enter-btn {
-  display: inline-block;
-  padding: 18px 45px;
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.enter-btn::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(
-    45deg,
-    #fff 0%,
-    #000 50%,
-    #666 100%
-  );
+.brilho1{
+  width: fit-content;
+  overflow: visible;
   z-index: 1;
-  border-radius: 50px;
-  animation: btnShine 3s infinite linear;
-}
-
-.enter-btn::after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  background: rgba(0,0,0,0.7);
-  border-radius: 50px;
-  z-index: 1;
-}
-
-/* Efeitos hover */
-.enter-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-.enter-btn:hover::before {
-  animation-duration: 1.5s;
-}
-
-.enter-btn {
-  font-family: var(--f-body);
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding: 15px 40px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(45deg, 
-    rgba(255, 255, 255, 0.1),
-    rgba(0, 0, 0, 0.3),
-    rgba(128, 128, 128, 0.2));
-  color: white;
-  text-decoration: none;
   position: relative;
+  padding: 0px;
+ }
+.brilho1{
+  padding: 0px !important;
+  border-radius: 100px;
+  outline: 4px solid #FFFFFF4F;
+  outline: 2px solid #FFFFFF4F !important;
+ }
+.brilho1::before{
+  transition: 0.35s ease-out;
+  filter: blur(12px);
+  background: linear-gradient(to right, transparent 30%, #ff7037 80%, #ff4900 95%);
+  width: 108%;
+  height: 125%;
+  left: 50%;
+  top: 50%;
+  content: "";
+  will-change: filter;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: var(--before-opacity, 1);
+}
+.brilho1::after{
+  transition: 0.35s ease-out;
+  filter: blur(12px);
+  background: linear-gradient(to left, transparent 30%, #ff7037 80%, #ff4900 95%);
+  width: 108%;
+  height: 125%;
+  left: 50%;
+  top: 50%;
+  content: "";
+  will-change: filter;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+}
+.brilho2 {
+  z-index: 5;
   overflow: hidden;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  position: relative;
 }
-
-.enter-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  color: #fff;
+.brilho2 .elementor-button {
+  background: #D1D1D1 !important;
+  border: 3px solid #fff;
+  padding: 15px 60px;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre texto e ícone */
+  justify-content: center;
+  border-radius: 100px;
+  position: relative;
+  transition: 2s;
+  font-family: var(--f-title); /* Adicione sua variável de fonte */
+  font-size: 1.2rem; /* Aumento do tamanho do texto */
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .enter-btn { padding: 15px 35px; }
+.brilho2 .elementor-button:before {
+  background-image: radial-gradient(43.3% 44.23% at 50% 49.51%, #fffff7 29%, #fffacd 48.5%, #f4d2bf 60.71%, #f4d2bf00 100%);
+  filter: blur(5px);
+  width: 300px;
+  height: 150px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(var(--button-translate-x, -10%), -50%);
+  border-radius: 100%;
+  transition: transform 0.8s cubic-bezier(.4, 0, .2, 1);
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-
-  .enter-btn {
-    font-size: 1rem;
-    padding: 12px 30px;
+.brilho2 .elementor-button, 
+.brilho2 .elementor-button:hover {
+  text-decoration: none !important;
+}
+.brilho2 .elementor-button-text {
+  color: #2A2A2A; /* Cor escura para melhor contraste */
+  font-weight: 600; /* Semi-bold */
+  letter-spacing: 0.5px; /* Melhora legibilidade */
+}
+.brilho2 .elementor-button.hovering:before {
+  transition: transform 0.15s ease-out !important;
+}
+.brilho2 .elementor-button-text,
+.brilho2 .elementor-button-icon {
+ z-index: 5;
+ align-self: center !important;
+ vertical-align: center !important;
+}
+.bi-arrow-right {
+  transition: transform 0.3s ease;
+  font-size: 1.4rem; /* Tamanho do ícone */
+  margin-left: 8px; /* Espaçamento adicional */
+  color: black; /* Herda a cor do texto */
+}
+ @media(max-width: 767px){
+  .brilho2 .elementor-button {
+    padding: 15px 30px;
   }
-}
-
-.btn-content {
-  position: relative;
-  z-index: 2;
-  font-family: var(--f-body);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: white;
-  letter-spacing: 1px;
 }
