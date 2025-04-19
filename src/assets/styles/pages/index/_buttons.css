@@ -100,8 +100,10 @@
   margin-left: 8px; /* Espaçamento adicional */
   color: black; /* Herda a cor do texto */
 }
- @media(max-width: 767px){
+
+@media (max-width: 767.98px) {
   .brilho2 .elementor-button {
-    padding: 15px 30px;
+    padding: 18px 33px;   
+    font-size: 1.6rem;    
   }
 }
