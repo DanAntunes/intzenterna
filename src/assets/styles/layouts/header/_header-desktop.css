@@ -33,20 +33,20 @@
 
 /* Estilo dos links permanece inalterado */
 .nav-link {
-  /* color: #333 !important; */
   color: var(--primary-color-text) !important;
   position: relative;
   margin: 0 15px;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              text-shadow 0.3s ease;
   font-weight: 565;
-  display: inline-block; /* Necessário para transforms */
+  display: inline-block;
+  will-change: transform; /* Otimização para animações */
 }
 
 .nav-link:hover {
-  transform: scale(1.05) translateY(-2px);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transform: translateY(-4px); /* Aumentei a distância da elevação */
+  text-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Sombra mais suave */
 }
-
 
 .nav-link::after {
   content: '';
