@@ -46,7 +46,7 @@ main {
   and (orientation: landscape) {
 
   main {
-    padding-top: 13vh;    /* ajuste conforme necessário */
+    padding-top: 13vh;   
   }
 }
 
