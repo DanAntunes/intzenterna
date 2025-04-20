@@ -1,0 +1,16 @@
+/* Para telas pequenas (celulares) */
+@media (max-width: 767.98px) {
+  footer p {
+    font-size: 0.75rem;
+  }
+  
+  .hide-mobile {
+    display: none;
+  }
+}
+/* Para telas pequenas (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer p {
+    font-size: 0.95rem;
+  }
+}
