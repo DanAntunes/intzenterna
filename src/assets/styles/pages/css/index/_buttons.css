@@ -55,13 +55,13 @@
   padding: 15px 60px;
   display: flex;
   align-items: center;
-  gap: 15px; /* Espaço entre texto e ícone */
+  gap: 15px; 
   justify-content: center;
   border-radius: 100px;
   position: relative;
   transition: 2s;
-  font-family: var(--f-title); /* Adicione sua variável de fonte */
-  font-size: 1.2rem; /* Aumento do tamanho do texto */
+  font-family: var(--f-title); 
+  font-size: 1.2rem; 
 }
 .brilho2 .elementor-button:before {
   background-image: radial-gradient(43.3% 44.23% at 50% 49.51%, #fffff7 29%, #fffacd 48.5%, #f4d2bf 60.71%, #f4d2bf00 100%);
@@ -81,9 +81,9 @@
   text-decoration: none !important;
 }
 .brilho2 .elementor-button-text {
-  color: #2A2A2A; /* Cor escura para melhor contraste */
-  font-weight: 600; /* Semi-bold */
-  letter-spacing: 0.5px; /* Melhora legibilidade */
+  color: #2A2A2A;
+  font-weight: 600;
+  letter-spacing: 0.5px; 
 }
 .brilho2 .elementor-button.hovering:before {
   transition: transform 0.15s ease-out !important;
@@ -96,9 +96,9 @@
 }
 .bi-arrow-right {
   transition: transform 0.3s ease;
-  font-size: 1.4rem; /* Tamanho do ícone */
-  margin-left: 8px; /* Espaçamento adicional */
-  color: black; /* Herda a cor do texto */
+  font-size: 1.4rem; 
+  margin-left: 8px;
+  color: black;
 }
 
 @media (max-width: 767.98px) {
