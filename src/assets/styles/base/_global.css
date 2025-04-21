@@ -1,7 +1,3 @@
-body {
-  background-color: black;
-}
-
 html,
 body {
   height: 100%;
@@ -12,14 +8,11 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-  background: var(--bg-body);
-  background-image: url('../../../../image/background/bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: relative; /* Cria um contexto de empilhamento */
+  background: #191919 url('../../image/background/bg.png') no-repeat center/cover;
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0;
 }
 
 main {
