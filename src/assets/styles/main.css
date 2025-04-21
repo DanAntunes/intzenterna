@@ -5,3 +5,45 @@
 @import url(./themes/_themes.css);
 @import url(./vendors/bootstrap_overrides/);
 
+.img-1 {
+  background-image: url("../img/titulos/titulo-1.webp");
+  position: relative; /* Elemento posicionado */
+  z-index: -1;        /* Coloca-o atrás do conteúdo e do background do body */
+  height: 100vh;      /* Ocupa toda a altura da viewport */
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.conteudo {
+  color: #777;
+  background-color: rgba(16, 16, 16, 0.5);
+  font-size: 1.5em;
+  text-align:justify;
+  padding: 50px 80px;
+}
+
+.conteudo-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.conteudo-titulo span.titulo {
+  color: #fff;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.conteudo-titulo-2 {
+  color: #fff;
+  background-color: #111;
+  letter-spacing: 5px;
+}
