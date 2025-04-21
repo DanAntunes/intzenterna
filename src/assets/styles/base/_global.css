@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   overflow-x: hidden;
   color: var(--primary-color);
   margin: 0;
@@ -10,7 +10,6 @@ body {
 body {
   position: relative; /* Cria um contexto de empilhamento */
   background: #191919 url('../../image/background/bg.png') no-repeat center/cover;
-  font-family: 'JetBrains Mono', monospace;
   margin: 0;
   padding: 0;
 }
@@ -18,3 +17,4 @@ body {
 main {
   flex: -1;
 }
+
