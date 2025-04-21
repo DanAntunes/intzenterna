@@ -24,21 +24,27 @@
     <meta name="twitter:image" content="">
   
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="../image/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../image/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../image/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/apple-touch-icon.png" />
+    <link rel="manifest" href="../image/favicon/site.webmanifest" />
   
     <!-- Bootstrap 5.3.3 CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/css/home/_home.css">
+
   </head>
 <body>
-  <!-- HEADER -->
-  <header>
+<!-- HEADER -->
+ <header>
     <nav class="navbar fixed-top navbar-expand-lg" id="mainNavbar">
       <div class="container-fluid">
         <!-- Exibe a logo em mobile (a classe d-lg-none esconde em telas maiores) -->
-        <a class="navbar-brand d-lg-none" href="#">LOGO</a>
+        <a class="navbar-brand d-lg-none" href="../image/logos/intz_logo.png"></a>
         <!-- Botão toggler para mobile -->
         <button class="navbar-toggler" 
                 type="button" 
@@ -62,13 +68,60 @@
         </div>
       </div>
     </nav>
-  </header>
+ </header>
+ <main>
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop>
+        <source src="../image/video/home/bg-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5
+    </video>
+    
+    <div class="hero-content">
+        <h1 class="hero-title">Bem-Vindo ao<br>Memorial Intrépido</h1>
+        <p class="hero-text">
+            Reviva a epopeia intrepida! Uma jornada através das batalhas memoráveis, 
+            conquistas históricas e a bravura que construiu o legado da INTZ.
+        </p>
+    </div>
+</section>
+ </main>
 
+
+  <!-- Footer ajustado -->
+  <footer class="container-fluid py-3 mt-auto bg-dark">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="mb-0 text-white-50 small">
+          &copy; 2025 Todos os direitos reservados | <span class="hide-mobile"> Desenvolvido por</span> <a href="https://github.com/DJA" target="_blank" rel="noopener noreferrer">DJA</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
   <!-- jQuery via CDN -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!-- Bootstrap JS Bundle via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Script personalizado -->
-  <script defer src="src/assets/js/header/navbar.js"></script>
+  <script defer src="../js/header/navbar.js"></script>
+  <script>
+    $(window).scroll(function() {
+        let scrolled = $(window).scrollTop();
+        $('.parallax-bg').css('transform', `translateY(${scrolled * 0.4}px)`);
+        $('.main-parallelogram').css('transform', `translateY(${scrolled * 0.1}px)`);
+    });
+
+    $(document).ready(function() {
+        // Efeito de parallax suave
+        $('.hero-image').hover(
+            function() {
+                $(this).css('transform', 'translateZ(-1px) scale(1.02)');
+            },
+            function() {
+                $(this).css('transform', 'translateZ(-1px) scale(1)');
+            }
+        );
+    });
+</script>
 </body>
 </html>
