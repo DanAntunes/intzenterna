@@ -6,7 +6,7 @@
 @import url(./vendors/bootstrap_overrides/);
 
 .img-1 {
-  background-image: url("../img/titulos/titulo-1.webp");
+  background-image: url("../../../2.png");
   position: relative; /* Elemento posicionado */
   z-index: -1;        /* Coloca-o atrás do conteúdo e do background do body */
   height: 100vh;      /* Ocupa toda a altura da viewport */
