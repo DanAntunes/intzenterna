@@ -1,0 +1,263 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 100px;
+}
+
+/* Vídeo */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         
+  transform: translateZ(-10px) scale(1.1);
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+/* Conteúdo */
+.hero-content {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  color: white;
+  background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Título animado mais lento */
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  animation: gravity 8s ease-in-out infinite;
+  font-family: var(--f-title);
+  text-transform: uppercase;
+}
+
+/* Texto */
+.hero-text {
+  font-size: 1.2rem;
+  max-width: 500px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-family: var(--f-body);
+}
+
+.logo-intz-home{
+    width: 30px;
+    height: 16px;
+}
+:root {
+  --section-divider-height: 60px;
+  --section-divider-width: 1920px;
+  --section-divider-ratio: calc(100% * var(--section-divider-height) / var(--section-divider-width));
+}
+
+.has-section-divider {
+  position: relative;
+  padding-bottom: var(--section-divider-ratio);
+}
+
+.section-divider {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: auto;
+}
+/* Keyframes do título */
+@keyframes gravity {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25%      { transform: translateY(-10px) rotate(1deg); }
+  50%      { transform: translateY(3px)  rotate(-1deg); }
+  75%      { transform: translateY(-7px) rotate(0.5deg); }
+}
+
+/* Parallax leve */
+@media (min-width: 768px) {
+  .hero {
+    perspective: 2px;
+  }
+  .hero-video {
+    transform: translateZ(-1px) scale(2);
+  }
+  .hero-content {
+    transform: translateZ(0);
+  }
+}
+:root {
+  --crsl-bg: transparent;
+  --box-bg: #1e272e;
+  --box-shadow: #0000001c;
+  --box-shadow-border: #0000000f;
+  --box-border: #fff;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(47,53,57);
+  background: -moz-radial-gradient(circle, rgba(47,53,57,1) 0%, rgba(30,39,46,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(47,53,57,1) 0%, rgba(30,39,46,1) 100%);
+  background: radial-gradient(circle, rgba(47,53,57,1) 0%, rgba(30,39,46,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1);
+}
+
+.carousel {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 125px;
+}
+
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.carousel__prev {
+  left: 20%;
+}
+
+.carousel__next {
+  right: 20%;
+}
+
+.carousel__prev i,
+.carousel__next i {
+  font-size: 60px;
+  color: var(--box-border);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  transform: translateY(-50%) scale(1.25);
+}
+
+.carousel__body {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  overflow: hidden;
+}
+
+.carousel__slider {
+  position: relative;
+  transition: transform 1s ease-in-out;
+  background: var(--crsl-bg);
+}
+
+.carousel__slider__item {
+  position: relative;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Estilos para as imagens */
+.carousel__slider__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.carousel__slider__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item__3d-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.item__3d-frame:after {
+  content: '';
+  position: absolute;
+  bottom: -15%;
+  width: 100%;
+  height: 40px;
+  background: var(--box-shadow);
+  box-shadow: 0px 0px 5px 5px var(--box-shadow);
+  transform: rotateX(90deg) translate3d(0px, -20px, 0px);
+  opacity: 0.85;
+}
+
+.item__3d-frame__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 3px solid var(--box-border);
+  background: transparent;
+}
+
+.item__3d-frame__box--front {
+  z-index: 2;
+  transform: translate3d(0, 0, 2px);
+}
+
+.item__3d-frame__box h1 {
+  font-size: 7em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+}
+
+.item__3d-frame__box--left,
+.item__3d-frame__box--right {
+  top: 0;
+  width: 40px;
+  backface-visibility: hidden;
+  background: var(--box-bg);
+}
+
+.item__3d-frame__box--left {
+  left: 0;
+  border-left-width: 5px;
+  transform: translate3d(1px, 0, -40px) rotateY(-90deg);
+  transform-origin: 0%;
+}
+
+.item__3d-frame__box--right {
+  right: 0;
+  border-right-width: 5px;
+  transform: translate3d(-1px, 0, -40px) rotateY(90deg);
+  transform-origin: 100%;
+}
+
+/* Efeito hover opcional */
+.carousel__slider__item:hover img {
+  transform: scale(1.05);
+}
