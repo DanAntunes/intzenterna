@@ -1,0 +1,136 @@
+.brilho1{
+  width: fit-content;
+  overflow: visible;
+  z-index: 1;
+  position: relative;
+  padding: 0px;
+ }
+.brilho1{
+  padding: 0px !important;
+  border-radius: 100px;
+  outline: 4px solid #FFFFFF4F;
+  outline: 2px solid #FFFFFF4F !important;
+ }
+.brilho1::before{
+  transition: 0.35s ease-out;
+  filter: blur(12px);
+  background: linear-gradient(to right, transparent 30%, #ff7037 80%, #ff4900 95%);
+  width: 108%;
+  height: 125%;
+  left: 50%;
+  top: 50%;
+  content: "";
+  will-change: filter;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: var(--before-opacity, 1);
+}
+.brilho1::after{
+  transition: 0.35s ease-out;
+  filter: blur(12px);
+  background: linear-gradient(to left, transparent 30%, #ff7037 80%, #ff4900 95%);
+  width: 108%;
+  height: 125%;
+  left: 50%;
+  top: 50%;
+  content: "";
+  will-change: filter;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: var(--after-opacity, 1);
+}
+.brilho2 {
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 100px;
+  position: relative;
+}
+.brilho2 .elementor-button {
+  background: #D1D1D1 !important;
+  border: 3px solid #fff;
+  padding: 15px 60px;
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  justify-content: center;
+  border-radius: 100px;
+  position: relative;
+  transition: 2s;
+  font-family: var(--f-title); 
+  font-size: 1.2rem; 
+}
+.brilho2 .elementor-button:before {
+  background-image: radial-gradient(43.3% 44.23% at 50% 49.51%, #fffff7 29%, #fffacd 48.5%, #f4d2bf 60.71%, #f4d2bf00 100%);
+  filter: blur(5px);
+  width: 300px;
+  height: 150px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(var(--button-translate-x, -10%), -50%);
+  border-radius: 100%;
+  transition: transform 0.8s cubic-bezier(.4, 0, .2, 1);
+}
+.brilho2 .elementor-button, 
+.brilho2 .elementor-button:hover {
+  text-decoration: none !important;
+}
+.brilho2 .elementor-button-text {
+  color: #2A2A2A;
+  font-weight: 600;
+  letter-spacing: 0.5px; 
+}
+.brilho2 .elementor-button.hovering:before {
+  transition: transform 0.15s ease-out !important;
+}
+.brilho2 .elementor-button-text,
+.brilho2 .elementor-button-icon {
+ z-index: 5;
+ align-self: center !important;
+ vertical-align: center !important;
+}
+.bi-arrow-right {
+  transition: transform 0.3s ease;
+  font-size: 1.4rem; 
+  margin-left: 8px;
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  .brilho2 .elementor-button {
+    padding: 18px 33px;   
+    font-size: 1.6rem;    
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .brilho2 .elementor-button {
+    padding: 35px 80px;      
+    font-size: 1.8rem;      
+  }
+}
+
+@media only screen
+  and (min-width: 1300px) and (max-width: 1559px)
+  and (min-height: 800px) and (max-height: 975px)
+  and (orientation: landscape) {
+  .brilho2 .elementor-button {
+    padding: 30px 80px;  
+    font-size: 2rem;   
+  }
+}
+
+@media only screen
+  and (min-width: 1920px) and (max-width: 1920px)
+  and (min-height: 1080px) and (max-height: 1080px)
+  and (orientation: landscape) {
+  .brilho2 .elementor-button {
+    padding: 40px 85px; 
+    font-size: 2rem;   
+  }
+}
