@@ -2,44 +2,4 @@
 @import url(./carousel/_carousel-buttons.css);
 @import url(./carousel/_itens_carousel.css);
 @import url(./carousel/_bg_section_carousel.css);
-
-
-:root {
-  --crsl-bg: transparent;
-  --box-bg: #1e272e;
-  --box-shadow: #0000004f;
-  --box-shadow-border: #0000000f;
-  --box-border: #fff;
-}
-
-
-
-
-
-/* trapézio invertido entre as sections */
-.carousel__divider {
-  position: absolute;
-  top: 0%;               /* ajuste conforme altura desejada */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 50px;           /* altura do trapézio */
-  background: var(--primary-color);
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-  z-index: 50;
-}
-
-/* caixa interna centralizada no trapézio */
-.carousel__divider__box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1.5rem 6rem;
-  background: var(--primary-color);
-  color: #e10f0f;
-  text-align: center;
-  font-family: var(--f-title);
-  text-transform: uppercase;
-  width: auto;            /* ajusta ao conteúdo */
-}
+@import url(./carousel/_carousel_divider.css);
