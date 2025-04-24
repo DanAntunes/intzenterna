@@ -1,3 +1,11 @@
+const titles = [
+    'INTZ Campeão CBLoL 2015 S1',
+    'INTZ Campeão CBLoL 2016 S1',
+    'INTZ Campeão CBLoL 2016 S2',
+    'INTZ Campeão CBLoL 2019 S1',
+    'INTZ Campeão CBLoL 2020 S2'
+  ];
+
 (function() {
   "use strict";
 
@@ -38,6 +46,11 @@
       if(index < 1) index = items.length;
       if(index > items.length) index = 1;
       currIndex = index;
+
+      const titleBox = document.querySelector('.carousel__divider__box');
+         if (titles[index - 1]) {
+            titleBox.textContent = titles[index - 1];
+         }
     
       for(var i = 0; i < items.length; i++) {
           let item = items[i],
@@ -77,11 +90,8 @@
       prevBtn.addEventListener('click', () => { prev(); });
       nextBtn.addEventListener('click', () => { next(); });    
   }
-
-
-
-
-  
   init();
   
 })();
+
+
