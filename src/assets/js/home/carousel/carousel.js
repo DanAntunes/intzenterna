@@ -1,9 +1,9 @@
 const titles = [
-    'INTZ Campeão CBLoL 2015 S1',
-    'INTZ Campeão CBLoL 2016 S1',
-    'INTZ Campeão CBLoL 2016 S2',
-    'INTZ Campeão CBLoL 2019 S1',
-    'INTZ Campeão CBLoL 2020 S2'
+    'CBLoL 2015 S1',
+    'CBLoL 2016 S1',
+    'CBLoL 2016 S2',
+    'CBLoL 2019 S1',
+    'CBLoL 2020 S2'
   ];
 
 (function() {
