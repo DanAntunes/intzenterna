@@ -1,7 +1,7 @@
 .carousel__divider {
   border: 1px solid var(--primary-color);
   position: absolute;
-  top: 0%;            
+  top: -1px; /* Ajuste fino para alinhamento */          
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
@@ -37,4 +37,27 @@
   font-weight: 600;
   text-transform: uppercase;
   width: auto;     
+}
+/* Nova classe para a máscara arredondada */
+.rounded-edges {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+
+.rounded-edges::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  mask: 
+    linear-gradient(#ffffff 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  padding: 4px; /* Controla o raio do arredondamento */
+  border-radius: 90px; /* Ajuste o valor para mudar o arredondamento */
+}
+
+.rounded-edges::before {
+  padding: 6px; /* Aumenta a área de transição */
+  border-radius: 20px; /* Cantos mais redondos */
 }
