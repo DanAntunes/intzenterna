@@ -92,11 +92,11 @@
 
   <!-- SEGUNDA SECTION -->
   <section class="section-history" id="historia">
-    <div class="custom-shape-divider-top-split">
+    <div class="custom-shape-divider-top-split ">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <defs>
           <linearGradient id="darkBlueBlack" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#050512" />
+            <stop offset="0%" stop-color="#050534" />
             <stop offset="100%" stop-color="#000000" />
           </linearGradient>
         </defs>
@@ -111,13 +111,24 @@
         </path>
       </svg>
     </div>
-    
-    <!-- Conteúdo da nova section -->
-    <div class="container py-5">
-      <h2>Nossa História</h2>
-      <p>Conteúdo da nova seção...</p>
+    <h2 class="display-5 history-section-title">História da INTZ</h2>
+    <div class="history-card p-5 mx-auto">
+      <div class="columns-container">
+        <!-- Coluna do Texto -->
+        <div class="col-text">
+          <h4 class="history-title mb-4">Resumo</h4>
+          <p id="history-text" class="history-text mb-4"></p>
+          <button id="history-btn" class="btn btn-space">
+            Saiba Mais <i class="bi bi-arrow-right-short"></i>
+          </button>
+        </div>
+        
+        <!-- Coluna da Imagem -->
+        <div class="col-image">
+          <img src="../image/intz-space-apollo.jpg" alt="Espaço Galáxia" class="space-image">
+        </div>
+      </div>
     </div>
-
 
   </section>
 
@@ -238,6 +249,7 @@
   <!-- Script personalizado -->
   <script defer src="../js/header/navbar.js"></script>
   <script defer src="../js/home/carousel/carousel.js"></script>
+  <script defer src="../js/home/history/history.js"></script>
   <!-- <script>
     $(window).scroll(function() {
         let scrolled = $(window).scrollTop();
