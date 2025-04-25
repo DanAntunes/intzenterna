@@ -37,14 +37,16 @@
   margin: 0 15px;
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
               text-shadow 0.3s ease;
-  font-weight: 505;
+  font-weight: 605;
   display: inline-block;
   will-change: transform; /* Otimização para animações */
+  filter: drop-shadow(0 0 4px var(--space-color));
 }
 
 .nav-link:hover {
-  transform: translateY(-4px); /* Aumentei a distância da elevação */
-  text-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Sombra mais suave */
+  filter: drop-shadow(0 0 8px var(--space-color));
+  text-shadow: 0 2px 4px var(--space-color);
+  transform: translateY(-2px); /* Aumentei a distância da elevação */
 }
 
 .nav-link::after {
