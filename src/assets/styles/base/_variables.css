@@ -4,8 +4,11 @@
   --primary-color-text: #ffffff;
   --primary-color: #f5f5f5 ;
   --accent-color: #e74c3c;
-  --background-color: #f4f4f4;
-  --text-color: #333;
+  --background-color: #fdfdfd;
+  --background-color-2: #f5f5f5;
+  --title-color: #333;
+  --text-color-2: #444;
+  --space-color: #050534;
   --bg-body: #191919;
 
   /* Typography */
@@ -23,6 +26,10 @@
   /* Border Radius */
   --border-radius: 4px;
 
-  /* Shadows */
-  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* carousel */
+  --crsl-bg: transparent;
+  --box-bg: #1e272e;
+  --box-shadow: #0000004f;
+  --box-shadow-border: #0000000f;
+  --box-border: #fff;
 }
