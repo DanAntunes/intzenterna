@@ -1,6 +1,6 @@
 /* Card centralizado */
 .history-card {
-  background: #fdfdfd;
+  background: var(--background-color-2);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   text-align: center;
@@ -18,7 +18,7 @@
 .history-title {
   font-family: var(--f2-title);
   font-size: 2.5rem;
-  color: #222;
+  color: var(--title-color);
   position: relative;
 }
 .history-title::after {
@@ -26,14 +26,14 @@
   display: block;
   width: 4rem;
   height: 4px;
-  background: #050534;
+  background: var(--space-color);
   margin: 0.5rem auto 0;
 }
 /* Texto com efeito máquina de escrever */
 .history-text {
   font-family: var(--f2-subtitle);
   font-size: 1.125rem;
-  color: #444;
+  color: var(--text-color-2);
   min-height: 6rem;
 }
 /* Cursor piscante */
