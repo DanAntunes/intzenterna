@@ -9,7 +9,7 @@ body {
 
 body {
   position: relative; /* Cria um contexto de empilhamento */
-  background: #191919 url('../../image/background/bg.png') no-repeat center/cover;
+  background: var(--bg-body) url('../../image/background/bg.png') no-repeat center/cover;
   margin: 0;
   padding: 0;
 }
