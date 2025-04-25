@@ -1,5 +1,5 @@
 .section-history{
-  border-bottom: 1px var(--primary-color) solid;
+  border-bottom: 1px var(--background-color) solid;
   background-color: var(--background-color);
   border-radius:0 0 1rem 1rem;
   position: relative;
@@ -9,7 +9,7 @@
 .history-section-title {
   font-family: var(--f-title);
   font-size: 2.5rem;
-  color: #222;
+  color: var(--title-color);
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
