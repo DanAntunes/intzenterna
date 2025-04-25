@@ -1,6 +1,6 @@
 .section-history{
   border-bottom: 1px var(--primary-color) solid;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   border-radius:0 0 1rem 1rem;
   position: relative;
   overflow: hidden;
@@ -21,7 +21,7 @@
   display: block;
   width: 12rem;
   height: 4px;
-  background: #050534;
+  background: var(--space-color);
   margin: 0.5rem auto 0;
 }
 .columns-container {
