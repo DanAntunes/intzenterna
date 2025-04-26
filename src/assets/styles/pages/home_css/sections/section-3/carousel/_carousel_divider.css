@@ -1,32 +1,37 @@
 .carousel__divider {
   border: 1px solid var(--background-color);
   position: absolute;
-  top: -1px; /* Ajuste fino para alinhamento */          
+  top: -1px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 50%;
-  height: 50px;           
+  height: 50px;
   background: var(--background-color);
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
   clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
   z-index: 50;
-  
 }
+
 .carousel__divider::before {
   content: '';
   position: absolute;
-  top: -2px;    /* metade da espessura do border */
+  top: -2px;
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
   clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
   border: 2px solid var(--background-color);
   box-sizing: border-box;
   pointer-events: none;
 }
+
 .carousel__divider__box {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 1.5rem 6rem;
   background: var(--background-color);
@@ -36,11 +41,13 @@
   font-size: 1.15rem;
   font-weight: 600;
   text-transform: uppercase;
-  width: auto;     
+  width: auto;
 }
-/* Nova classe para a máscara arredondada */
+
+/* Máscara arredondada */
 .rounded-edges {
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
   clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
 }
 
@@ -49,15 +56,15 @@
   position: absolute;
   inset: 0;
   background: inherit;
-  mask: 
+  -webkit-mask:
     linear-gradient(#ffffff 0 0) content-box,
     linear-gradient(#000 0 0);
+  mask:
+    linear-gradient(#ffffff 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
   mask-composite: exclude;
-  padding: 4px; /* Controla o raio do arredondamento */
-  border-radius: 90px; /* Ajuste o valor para mudar o arredondamento */
-}
-
-.rounded-edges::before {
-  padding: 6px; /* Aumenta a área de transição */
-  border-radius: 20px; /* Cantos mais redondos */
+  padding: 6px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
 }
