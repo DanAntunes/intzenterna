@@ -1,11 +1,13 @@
 /* Estilização base do navbar */
 #mainNavbar {
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
   transition: opacity 0.6s ease, transform 0.6s ease;
   padding: 1px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  -webkit-transform: translateY(0);
   transform: translateY(0);
   font-family: var(--f-subtitle);
   text-transform: uppercase;
@@ -14,6 +16,7 @@
 /* Estado oculto: opacidade zero e deslocamento para cima */
 #mainNavbar.navbar-hidden {
   opacity: 0;
+  -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   pointer-events: none;
 }
@@ -24,9 +27,11 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 80%;
   height: 1px;
+  background: -webkit-linear-gradient(left, transparent 0%, #f4f4f4 50%, transparent 100%);
   background: linear-gradient(to right, transparent 0%, #f4f4f4 50%, transparent 100%);
 }
 
@@ -35,18 +40,23 @@
   color: var(--primary-color-text) !important;
   position: relative;
   margin: 0 15px;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                     text-shadow 0.3s ease;
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
               text-shadow 0.3s ease;
   font-weight: 605;
   display: inline-block;
-  will-change: transform; /* Otimização para animações */
+  will-change: transform; 
+  -webkit-filter: drop-shadow(0 0 4px var(--space-color));
   filter: drop-shadow(0 0 4px var(--space-color));
 }
 
 .nav-link:hover {
+  -webkit-filter: drop-shadow(0 0 8px var(--space-color));
   filter: drop-shadow(0 0 8px var(--space-color));
   text-shadow: 0 2px 4px var(--space-color);
-  transform: translateY(-2px); /* Aumentei a distância da elevação */
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px); 
 }
 
 .nav-link::after {
@@ -56,14 +66,15 @@
   left: 0;
   width: 0;
   height: 2px;
-  /* background: #333; */
   background: var(--primary-color);
+  -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
   width: 100%;
-  transform: translateY(1px); /* Ajusta a posição da linha com o scale */
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px); 
 }
 
 @media only screen
