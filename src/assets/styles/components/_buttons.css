@@ -1,23 +1,30 @@
 /* Botão customizado */
 .btn-space {
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-align-items: center;
   align-items: center;
   font-family: var(--f2-subtitle);
   font-size: 1rem;
   padding: 0.75rem 2rem;
   border-radius: 50px;
+  background: -webkit-linear-gradient(135deg, var(--space-color), #000);
   background: linear-gradient(135deg, var(--space-color), #000);
   color: #fff;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
-  
 }
+
 .btn-space:hover {
+  -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.25);
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600; 
 }
+
 .btn-space:active {
+  -webkit-transform: translateY(-1px);
   transform: translateY(-1px);
   box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
