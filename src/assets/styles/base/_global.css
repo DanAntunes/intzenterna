@@ -2,25 +2,36 @@ html,
 body {
   min-height: 100%;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
   color: var(--primary-color);
   margin: 0;
   padding: 0;
 }
 
 body {
-  position: relative; /* Cria um contexto de empilhamento */
+  position: relative; 
   background: var(--bg-body) url('../../image/background/bg.png') no-repeat center/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   margin: 0;
   padding: 0;
 }
 
 main {
   flex: -1;
+  -webkit-flex: -1;
+  -ms-flex: -1;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease-in-out;
-}	
-
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
