@@ -1,20 +1,30 @@
-
 body {
-  font-family: var(--f-body);
+  font-family: var(--f-body), sans-serif; 
+  -webkit-font-smoothing: antialiased;   
+  -moz-osx-font-smoothing: grayscale;     
 }
 
 h1, .title {
-  font-family: var(--f-title);
+  font-family: var(--f-title), serif;
+  -webkit-font-feature-settings: "liga" 1, "kern" 1;
+  font-feature-settings: "liga" 1, "kern" 1;        
 }
 
 h1, .title-bold {
-  font-family: var(--f2-title);
+  font-family: var(--f2-title), serif;
+  font-weight: bold;
+  -webkit-font-feature-settings: "liga" 1, "kern" 1;
+  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 h2, h3, .subtitle {
-  font-family: var(--f-subtitle);
+  font-family: var(--f-subtitle), sans-serif;
+  -webkit-text-rendering: optimizeLegibility; 
+  text-rendering: optimizeLegibility;       
 }
 
 h4, h5, h6 {
-  font-family: var(--f2-subtitle);
+  font-family: var(--f2-subtitle), sans-serif;
+  -webkit-font-smoothing: antialiased;   
+  -moz-osx-font-smoothing: grayscale;   
 }
