@@ -1,11 +1,12 @@
 .luminance-title {
+  background: 50% 100% / 50% 50% no-repeat -webkit-radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 10vw;
-  animation: reveal 3000ms ease-in-out forwards 200ms,
-             glow 2500ms linear infinite 2000ms;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
 }
 
 .luminance-title span {
@@ -17,12 +18,11 @@
   and (min-width: 1300px) and (max-width: 1559px)
   and (min-height: 800px) and (max-height: 975px)
   and (orientation: landscape) {
-
   .luminance-title {
-    font-size: 12vw;     
+    font-size: 12vw;
   }
   .luminance-title span {
-    display: block;    
+    display: block;
     line-height: 1.1;
   }
 }
@@ -31,12 +31,11 @@
   and (min-width: 1920px) and (max-width: 1920px)
   and (min-height: 1080px) and (max-height: 1080px)
   and (orientation: landscape) {
-  
   .luminance-title {
-    font-size: 11vw;     
+    font-size: 11vw;
   }
   .luminance-title span {
-    display: block;      
+    display: block;
     line-height: 1.1;
   }
 }
