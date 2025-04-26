@@ -1,7 +1,9 @@
 /* Estilos do Footer */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: -webkit-linear-gradient(left, #0a0a0a, #1a1a1a);
   background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+  -webkit-backdrop-filter: blur(5px); 
   backdrop-filter: blur(5px);
   padding: 0;
 }
@@ -9,6 +11,7 @@ footer {
 footer p a {
   color: var(--text-color);
   text-decoration: none;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
