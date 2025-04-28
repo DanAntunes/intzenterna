@@ -1,5 +1,6 @@
-@import url(./carousel/carousel.css);
-@import url(./carousel/_carousel-buttons.css);
-@import url(./carousel/_itens_carousel.css);
 @import url(./carousel/_bg_section_carousel.css);
 @import url(./carousel/_carousel_divider.css);
+@import url(./carousel/_carousel-buttons.css);
+@import url(./carousel/carousel.css);
+@import url(./carousel/_itens_carousel.css);
+@import url(./carousel/_item_carousel_hover.css);
