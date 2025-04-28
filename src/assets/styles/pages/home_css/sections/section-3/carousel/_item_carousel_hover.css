@@ -8,7 +8,7 @@
 }
 
 .carousel__slider__item::after {
-  content: "Novo Texto"; 
+  content: attr(data-text);
   position: absolute;
   top: 50%;
   left: 50%;
