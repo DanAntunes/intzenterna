@@ -3,20 +3,21 @@
 .carousel__slider__item:hover img {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  filter: brightness(0.7) contrast(1.2);
+  filter: brightness(0.5) contrast(1.2);
   transition: all 0.5s ease;
 }
 
 .carousel__slider__item::after {
   content: attr(data-text);
+  font-family: var(--f2-title);
+  text-transform: uppercase;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: var();
-  font-family: var();
+  color: var(--primary-color-text);
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   opacity: 0;
   transition: all 0.3s ease 0.2s; 
 }
