@@ -1,0 +1,39 @@
+
+/* Efeito hover opcional */
+.carousel__slider__item:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  filter: brightness(0.7) contrast(1.2);
+  transition: all 0.5s ease;
+}
+
+.carousel__slider__item::after {
+  content: "Novo Texto"; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: var();
+  font-family: var();
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.3s ease 0.2s; 
+}
+
+.carousel__slider__item:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  animation: surgir 0.5s ease; 
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
