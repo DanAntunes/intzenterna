@@ -1,0 +1,14 @@
+/* DESKTOP STYLE SHEET */
+@import url(../../base/_variables.css);
+@import url(./desktop/_main.css);
+@import url(./desktop/_typography.css);
+@import url(./desktop/_titles.css);
+@import url(./desktop/_buttons.css);
+@import url(./desktop/_footer.css);
+@import url(./_animations.css);
+/* MOBILE STYLE SHEET */
+@import url(./mobile/_main-mobile.css);
+@import url(./mobile/_typography-mobile.css);
+@import url(./mobile/_titles-mobile.css);
+@import url(./mobile/_buttons-mobile.css);
+@import url(./mobile/_footer-mobile.css);
