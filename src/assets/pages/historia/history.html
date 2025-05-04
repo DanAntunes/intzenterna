@@ -33,60 +33,35 @@
 </head>
 <body>
 
-  <header style="box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);"><!-- Start header -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-transparente">
-      <div class="container d-flex flex-row">
-
-      <span>
-       <a href="index.html" class="navbar-brand">
-         <img src="public/assets/img/header/logo.png" class="logo" alt="INTZ logo">
-       </a>
-      </span>
-
-       <button class="navbar-toggler"
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navegacao" 
-        aria-controls="navbarNavDropdown" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navegacao">
-        <ul class="navbar-nav text-uppercase">
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="historia.html">História</a>
-           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="titulos.html">Títulos </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="idolo.html">Ídolos</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Explorar
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./src/pages/dropdown/curiosidades.html">Curiosidades</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./src/pages/dropdown/sobre.html">Sobre</a></li>
-            </ul>
-          </li>
-
-        </ul>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg" id="mainNavbar">
+      <div class="container-fluid">
+        <!-- Exibe a logo em mobile (a classe d-lg-none esconde em telas maiores) -->
+        <a class="navbar-brand d-lg-none" href="../image/logos/intz_logo.png"></a>
+        <!-- Botão toggler para mobile -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Itens do navbar -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./history.html">História</a></li>
+            <li class="nav-item"><a class="nav-link" href="./error/error.html">Títulos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./error/error.html">Ídolos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./error/error.html">Curiosidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="./error/error.html">Sobre</a></li>
+          </ul>
+        </div>
       </div>
-        <div class=" ml-5 time d-none d-lg-block rgb-borda ">
-          <div class="clock" id="time">12:00:00</div>
-      </div>
-      </div>
-      </div><!--/fim nav -->
-  </header><!--/fim header-->
+    </nav>
+</header>
 
 <main class="container m-auto mt-4" style="box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);"><!-- main -->
 
