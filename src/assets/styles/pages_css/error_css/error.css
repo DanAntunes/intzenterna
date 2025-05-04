@@ -1,0 +1,51 @@
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  
+  font-family: 'Arial', sans-serif;
+}
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../../../image/404/not-_found_img.webp') center/cover fixed;
+  filter: grayscale(100%) brightness(0.7);
+  z-index: 0;
+}
+
+.blur-card {
+  position: relative;
+  z-index: 1; 
+  max-width: 600px;   
+  min-height: 300px;  
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.error-code,
+.lead,
+.text-muted {
+  position: relative;
+  z-index: 1;
+  color: #ffffff !important;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+}
+
+.error-svg {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+}
+
+.btn-primary {
+  position: relative;
+  z-index: 1;
+}
