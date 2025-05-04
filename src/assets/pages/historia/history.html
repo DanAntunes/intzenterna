@@ -42,7 +42,7 @@
   </head>
 <body>
 
-  <header>
+<header>
     <nav class="navbar fixed-top navbar-expand-lg" id="mainNavbar">
       <div class="container-fluid">
         <!-- Exibe a logo em mobile (a classe d-lg-none esconde em telas maiores) -->
@@ -72,24 +72,46 @@
     </nav>
 </header>
 
-<main class="container m-auto mt-4" style="box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);"><!-- main -->
+ <!-- Seção Hero -->
+ <section class="hero-section parallax" style="background-image: url('sua-imagem.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center">
+          <div class="col-12 text-center">
+              <h1 class="hero-title d-flex flex-md-row flex-column">
+                  <span class="fw-bold">INTZ</span>
+                  <span class="fw-bold ms-md-3">HISTÓRIA</span>
+              </h1>
+          </div>
+      </div>
+  </div>
+</section>
 
-   <article class="card row darkness">
+<section class="split-section">
+  <div class="split-left text-white">
+    <div class="row g-3"> <!-- gutter (espaço) de 3 -->
+        <div class="col-md-6">
+            <img src="../../image/lucas_simon.jpg" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-md-6">
+            <img src="../../image/rogerio_formiga.jpg" class="img-fluid rounded" alt="">
+        </div>
+    </div>
+</div>
+  
+  <div class="split-right text-white">
+      <div class="split-content">
+          <h2 class="mb-4">Nossa História</h2>
+          <p>Seu texto aqui...</p>
+      </div>
+  </div>
+</section>
 
-    <section class="col text-light mt-1 rounded">
 
-      <figure class="m-auto rounded-start">
-        <img src="public/assets/img/historia/INTZ 10 anos sombra.png" class="img-fluid">
-      </figure>
 
-      <h2 class="display text-center"> História </h2>
-      <span class="animation-line-gold m-auto "></span>
 
-      <h3 class="display mt-3 mb-2">Early Game!</h3>
 
-      <br>
-
-      <p class="lead mt-2">
+      <!-- <p class="lead mt-2">
       &nbsp; Foi em 2014 que o jovem Luan “SNK” deu ao pai, Rogério “Formiga”,
       um conselho valioso que mudaria a história do cenário de LoL na América Latina.
       . Ao lado de Lucas Almeida, “Formiga” decidiu ouvir os apelos do filho e fundou, na região do Brás,
@@ -104,15 +126,11 @@
       decidiram investir pesado no segmento - inicialmente apenas com a equipe de League of Legends.
       Um complexo de quatro apartamentos no Brás foi adaptado para receber a gaming house, estrutura que pouquíssimas organizações tinham na época.
       </p>
-
       <a href="https://sportv.globo.com/site/games/noticia/2016/09/do-negocio-por-acaso-ao-sonho-do-mundo-historia-do-brasileiro-intz.html" 
       target="_blank"
       class="btn btn-md btn-custom branco mb-2">
         Fonte original (atualizado em : 27:06/2024)
       </a>
-
-    </section>
-
     <section class="col text-light mt-1 rounded">
       
       <figure class="">
@@ -129,7 +147,7 @@
       vencendo da Keyd Stars por 3 a 0 na grande final e se classificaram para o International Wildcard Invitational (IWCI).</p>
 
       <span class="dropdown"> <!--Fontes-->
-        <button 
+        <!-- <button 
         class="dropdown-toggle btn btn-md btn-custom branco mb-2" 
         type="button" id="fontesDropdown" 
         data-bs-toggle="dropdown"
@@ -144,12 +162,9 @@
           </ul>
       </span>
 
-    </section>
+    </section> --> 
 
-  </article>
 
-   
-</main><!--/end main-->
 
   <!-- Footer ajustado -->
   <footer class="container-fluid py-3 mt-auto bg-dark">
@@ -165,7 +180,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="../../js/header/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+    
 </body>
 
 
