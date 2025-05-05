@@ -6,39 +6,32 @@
   position: relative;
   z-index: 2;
 }
-
 .hero-title{
   display: flex;
-  flex-wrap: wrap;      /* permite quebra de linha */
+  flex-wrap: wrap;     
   justify-content: center;
-
   color: var(--primary-color);
   font-family: var(--f-title);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
-
 .hero-title::after {
   content: "";
-  flex-basis: 100%;     /* força ocupação total da linha */
+  flex-basis: 100%;     
   margin-top: .5rem;
   width: 4rem;
   height: 4px;
   background: var(--primary-color);
   margin: 0.1rem auto 0;
 }
-
-
 .hero-overlay {
   position: absolute;
-  inset: 0;           /* topo, direita, baixo, esquerda = 0 */
+  inset: 0;           
   background: rgba(0, 0, 0, 0.5);
-  z-index: 2;         /* entre fundo e texto */
+  z-index: 2;       
 }
-
-
 .container, .hero-content {
   position: relative;
-  z-index: 3;         /* texto sempre acima */
+  z-index: 3;        
 }
 
 /* Responsividade */
