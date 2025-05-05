@@ -1,0 +1,14 @@
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-img-hero {
+  background-image: url('../../../image/historia/primeira line.png');
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
