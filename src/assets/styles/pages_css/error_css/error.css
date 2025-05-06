@@ -10,7 +10,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('../../../image/404/not-_found_img.webp') center/cover fixed;
+  background: url('../../../image/image_pages/404/not-_found_img.webp') center/cover fixed;
   filter: grayscale(100%) brightness(0.7);
   z-index: 0;
 }
