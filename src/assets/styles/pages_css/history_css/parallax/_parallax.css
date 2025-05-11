@@ -12,3 +12,10 @@
   overflow: hidden;
   z-index: 1;
 }
+
+.parallax-img-ceo {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
