@@ -1,32 +1,17 @@
 .ceos-section {
-  background: #fff !important;       /* sobrescreve qualquer parallax */
+  background: var() !important; 
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 0;
 }
-
-/* 2) remover o background da classe parallax-img-ceo */
 .ceos-section.parallax-img-ceo {
   background-image: none !important;
   background-attachment: initial;
 }
-
-/* 3) empurrar o container de imagens lá pra cima */
 .images-container {
-  margin-top: -10px;  /* ajuste fino conforme header/padding */
-}
-
-
-/* 4) estilização opcional do texto */
-.text-container h2 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-.text-container p {
-  font-size: 1rem;
-  color: #555;
+  margin-top: -10px; 
 }
 .ceo-image-frame {
     position: relative;
@@ -38,20 +23,16 @@
     transition: transform 0.3s ease;
     min-height: 150px;
 }
-
 .ceo-img {
     border: 4px solid var(--primary-color-text);
     width: 120px;
 }
-
 .transform-up {
     transform: rotate(-5deg) translateY(-20px);
 }
-
 .transform-down {
     transform: rotate(5deg) translateY(20px);
 }
-
 .ceo-name-static {
     font-weight: 600;
     background: var(--primary-color-text);
@@ -64,25 +45,28 @@
     margin-left: auto;
     margin-right: auto;
 }
-.debug {
-    border: 1px solid red;
+.text-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.text-container p {
+  font-size: 1rem;
+  color: #555;
 }
 @media (max-width: 768px) {
-    .transform-up, .transform-down {
-        transform: none;
-        margin: 20px 0;
-    }
-
-    .ceo-name-static {
-        margin-top: 15px;
-    }
-
-    .ceo-image-frame {
-        flex-direction: column !important;
-        align-items: center;
-        text-align: center;
-    }
-      .images-container {
-    margin-top: 0;
-  }
+ .ceo-image-frame {
+  flex-direction: column !important;
+  align-items: center;
+  text-align: center;
+ }
+ .images-container {
+   margin-top: 0;
+ }
+ .ceo-name-static {
+   margin-top: 15px;
+ }
+ .transform-up, .transform-down {
+   transform: none;
+   margin: 20px 0;
+ }
 }
