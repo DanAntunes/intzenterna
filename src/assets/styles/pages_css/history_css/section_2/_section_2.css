@@ -1,4 +1,3 @@
-/* 1) fundo branco e sem parallax */
 .ceos-section {
   background: #fff !important;       /* sobrescreve qualquer parallax */
   position: relative;
@@ -62,8 +61,12 @@
     color: var(--text-color-2);
     white-space: nowrap;
     font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.debug {
+    border: 1px solid red;
+}
 @media (max-width: 768px) {
     .transform-up, .transform-down {
         transform: none;
