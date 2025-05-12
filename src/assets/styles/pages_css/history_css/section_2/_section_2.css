@@ -1,5 +1,18 @@
+.custom-shape-divider-top-1747066151 .shape-fill {
+    fill: #191919;
+}
+.custom-shape-divider-top-1747066151 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../../../image/background/luxo-abstrato-desfocar-gradiente-cinza-escuro-e-preto-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos-plano-de-fundo-liso-estudio.jpg'); 
+}
 .ceos-section {
-  background: var() !important; 
+  background-image: url('../../../../image/background/luxo-abstrato-desfocar-gradiente-cinza-escuro-e-preto-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos-plano-de-fundo-liso-estudio.jpg'); 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -45,15 +58,14 @@
     margin-left: auto;
     margin-right: auto;
 }
-.text-container h2 {
-  font-size: 2rem;
-  font-weight: 600;
+.text-container h1 {
+  font-weight: 800;
   filter: drop-shadow(0 0 5px var(--space-color));
 }
 .text-container p {
   font-size: 1rem;
-  color: var();
-  font-family: var();
+  color: var(--title-color);
+  font-family: var(--f-body);
 }
 @media (max-width: 768px) {
  .ceo-image-frame {
@@ -72,3 +84,5 @@
    margin: 20px 0;
  }
 }
+
+
