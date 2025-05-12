@@ -1,11 +1,34 @@
+/* 1) fundo branco e sem parallax */
 .ceos-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 0;
-}	
+  background: #fff !important;       /* sobrescreve qualquer parallax */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
 
+/* 2) remover o background da classe parallax-img-ceo */
+.ceos-section.parallax-img-ceo {
+  background-image: none !important;
+  background-attachment: initial;
+}
+
+/* 3) empurrar o container de imagens lá pra cima */
+.images-container {
+  margin-top: -10px;  /* ajuste fino conforme header/padding */
+}
+
+
+/* 4) estilização opcional do texto */
+.text-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.text-container p {
+  font-size: 1rem;
+  color: #555;
+}
 .ceo-image-frame {
     position: relative;
     padding: 10px;
@@ -56,4 +79,7 @@
         align-items: center;
         text-align: center;
     }
+      .images-container {
+    margin-top: 0;
+  }
 }
