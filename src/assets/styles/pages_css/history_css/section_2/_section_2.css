@@ -48,10 +48,12 @@
 .text-container h2 {
   font-size: 2rem;
   font-weight: 600;
+  filter: drop-shadow(0 0 5px var(--space-color));
 }
 .text-container p {
   font-size: 1rem;
-  color: #555;
+  color: var();
+  font-family: var();
 }
 @media (max-width: 768px) {
  .ceo-image-frame {
