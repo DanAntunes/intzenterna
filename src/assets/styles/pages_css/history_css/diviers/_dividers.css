@@ -13,7 +13,27 @@
     background-image: url('../../../../image/background/luxo-abstrato-desfocar-gradiente-cinza-escuro-e-preto-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos-plano-de-fundo-liso-estudio.jpg'); 
 }
 
+/* Section 2 - 3 */
+.custom-shape-divider-top-2 {
+    position: absolute;
+    top: 0;
+     z-index: 3;      
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+}
+.custom-shape-divider-top-2 .shape-fill {
+    fill: #E4E4E4;
+}
 
+/* Section 3 - 4 */
 .custom-shape-divider-bottom-1 {
     position: absolute;
     bottom: 0;
@@ -23,7 +43,6 @@
     line-height: 0;
     transform: rotate(180deg);
 }
-
 .custom-shape-divider-bottom-1 svg {
     position: relative;
     display: block;
@@ -31,7 +50,6 @@
     height: 86px;
     transform: rotateY(180deg);
 }
-
 .custom-shape-divider-bottom-1 .shape-fill {
     fill: #191919;
 }
