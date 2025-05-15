@@ -3,27 +3,7 @@
 @import url(./section_1/_section_1.css);
 @import url(./section_2/_section_2.css);
 
-.custom-shape-divider-bottom-1747322148 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1747322148 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 86px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1747322148 .shape-fill {
-    fill: #191919;
-}
 
 .custom-shape-divider-top-1747322584 {
     position: absolute;
