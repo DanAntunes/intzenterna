@@ -5,23 +5,3 @@
 
 
 
-.custom-shape-divider-top-1747322584 {
-    position: absolute;
-    top: 0;
-     z-index: 3;      
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1747322584 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 86px;
-}
-
-.custom-shape-divider-top-1747322584 .shape-fill {
-    fill: #E4E4E4;
-}
