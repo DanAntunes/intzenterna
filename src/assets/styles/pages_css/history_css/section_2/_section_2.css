@@ -63,7 +63,7 @@
   filter: drop-shadow(0 0 5px var(--space-color));
 }
 .text-container p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--title-color);
   font-family: var(--f-body);
 }
