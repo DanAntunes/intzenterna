@@ -56,3 +56,23 @@
 .custom-shape-divider-bottom-1 .shape-fill {
     fill: #191919;
 }
+/* Section 4 - 5 */
+.custom-shape-divider-top-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 122px;
+}
+
+.custom-shape-divider-top-3 .shape-fill {
+    fill: #191919;
+}
