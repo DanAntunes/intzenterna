@@ -27,3 +27,11 @@
   overflow: hidden;
   z-index: 1;
 }
+
+.parallax-img-3 {
+  background-image: url('../../../../image/image_pages/historia/line/15487247621_9d92367cc2_z.jpg');
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
