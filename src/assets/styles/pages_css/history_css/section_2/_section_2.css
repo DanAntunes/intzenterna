@@ -1,49 +1,52 @@
 .ceos-section {
-  background-image: url('../../../../image/background/luxo-abstrato-desfocar-gradiente-cinza-escuro-e-preto-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos-plano-de-fundo-liso-estudio.jpg'); 
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   padding: 60px 0;
-}
-.ceos-section.parallax-img-ceo {
-  background-image: none !important;
-  background-attachment: initial;
+  background-image: url('../../../../image/background/luxo-abstrato-desfocar-gradiente-cinza-escuro-e-preto-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos-plano-de-fundo-liso-estudio.jpg'); 
 }
 .images-container {
-  margin-top: -10px; 
+  margin-top: 5px;
+  padding: 0.5rem;
 }
 .ceo-image-frame {
-    position: relative;
-    padding: 10px;
-    background: var(--bg-body);
-    border-radius: 10px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transform-origin: center;
-    transition: transform 0.3s ease;
-    min-height: 150px;
+  position: relative;
+  min-height: 150px;
+  min-width: 300px; 
+  padding: 10px;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  background: var(--bg-body);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
 }
 .ceo-img {
-    border: 4px solid var(--primary-color-text);
-    width: 120px;
-}
-.transform-up {
-    transform: rotate(-5deg) translateY(-20px);
-}
-.transform-down {
-    transform: rotate(5deg) translateY(20px);
+  width: 120px;
+  border: 4px solid var(--primary-color-text);
 }
 .ceo-name-static {
-    font-weight: 600;
-    background: var(--primary-color-text);
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    color: var(--text-color-2);
-    white-space: nowrap;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  font-family:  var(--f2-title);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color-2);
+  background: var(--primary-color-text);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+.transform-up {
+  transform: rotate(-5deg) translateY(-20px);
+}
+.transform-down {
+  transform: rotate(5deg) translateY(20px);
+}
+.ceo-img-frame-specific{
+ margin: 0 auto;
+ width: 371px; 
 }
 .text-container h1 {
   font-weight: 800;
@@ -69,6 +72,10 @@
  .transform-up, .transform-down {
    transform: none;
    margin: 20px 0;
+ }
+ .ceo-img-frame-specific{
+  width: 394px;
+  margin-top: -40px !important;
  }
 }
 
