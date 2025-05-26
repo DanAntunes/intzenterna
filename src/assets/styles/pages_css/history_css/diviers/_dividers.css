@@ -110,7 +110,6 @@
 }
 .custom-shape-divider-top-4 .shape-fill {
     fill: #191919;
-    /* background-color: 0c0c0c0; */
 }
 /* Section 7 - 8 */
 .custom-shape-divider-bottom-3 {
@@ -130,5 +129,24 @@
 }
 .custom-shape-divider-bottom-3 .shape-fill {
     fill: #191919;
+}
+/* Section 8 */
+.custom-shape-divider-top-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-5 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    transform: rotateY(180deg);
+}
+.custom-shape-divider-top-5 .shape-fill {
+    fill: #0c0c0c;
 }
 
