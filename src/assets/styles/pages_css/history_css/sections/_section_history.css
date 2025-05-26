@@ -4,7 +4,7 @@
 }
 .history-section-2 {
   background-color: var(--background-color-3);
-  padding-bottom: 5px; /* ou border-bottom: 1px solid transparent */
+  padding-bottom: 5px;
 }
 .history-overlay {
   position: absolute;
