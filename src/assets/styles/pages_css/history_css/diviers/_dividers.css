@@ -102,12 +102,16 @@
     overflow: hidden;
     line-height: 0;
 }
+
 .custom-shape-divider-top-4 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 90px;
+    height: 60px;
 }
+
 .custom-shape-divider-top-4 .shape-fill {
-    fill: #0c0c0c;
+    fill: #191919;
+    /* background-color: 0c0c0c0; */
 }
+
