@@ -37,7 +37,15 @@
 }
 
 .parallax-img-4 {
-  background-image: url('../../../../image/image_pages/historia/parallax_img/parallax_img_4_intz_eterna.png');
+  background-image: url('../../../../image/image_pages/historia/parallax_img/parallax_img_4_revolta.jpg');
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.parallax-img-5 {
+  background-image: url('../../../../image/image_pages/historia/parallax_img/parallax_img_5_intz_eterna.png');
   height: 100vh;
   position: relative;
   overflow: hidden;
