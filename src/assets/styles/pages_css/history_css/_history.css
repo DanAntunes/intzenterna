@@ -3,8 +3,3 @@
 @import url(./sections/_section_hero.css);
 @import url(./sections/_section_ceo.css);
 @import url(./sections/_section_history.css);
-
-
-.debug {
-  border: 1px solid red;
-}
