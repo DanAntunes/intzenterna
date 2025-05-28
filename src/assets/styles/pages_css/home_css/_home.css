@@ -5,6 +5,8 @@
 @import url(./divider.css);
 @import url(../../components/_buttons.css);
 
-
+.debug {
+border: 1px solid red;
+}
 
 
