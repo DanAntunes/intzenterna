@@ -37,19 +37,20 @@
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-        .left-column {
-            padding-right: 40px;
-        }
+.left-column {
+ border: 1px solid red;
+ padding-right: 30px;
+}
         
-        .left-column h2 {
-            font-size: 3.5rem;
-            color: var(--primary-color-text);
-            margin-bottom: 25px;
-            text-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
-            font-family: var(--f-title);
-            position: relative;
-            padding-bottom: 15px;
-        }
+.left-column h2 {
+ position: relative;
+ margin-bottom: 25px;
+ padding-bottom: 15px;
+ font-size: 3.5rem;
+ color: var(--primary-color-text);
+ text-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+ font-family: var(--f2-title);
+}
         
         .left-column h2::after {
             content: '';
@@ -80,6 +81,10 @@
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
+        }
+
+        .idol-1 {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../../../../image/image_pages/idolos/peter.png')
         }
         
         .author {
@@ -204,6 +209,46 @@
             animation: borderAnimation 4s linear infinite;
             background-size: 400% 400%;
         }
+
+        /* NOVOS ESTILOS ADICIONADOS */
+.btn-idols {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, var(--accent-color), #b21f1f);
+  color: var(--primary-color-text);
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: var(--f-subtitle);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.btn-idols:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.6);
+  background: linear-gradient(45deg, #b21f1f, var(--accent-color));
+}
+
+/* GALERIA EM 2 LINHAS */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
         
         @keyframes borderAnimation {
             0% { background-position: 0% 50%; }
