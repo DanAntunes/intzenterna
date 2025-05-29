@@ -1,4 +1,4 @@
-.custom-shape-divider-top-1748448930 {
+.custom-shape-divider-top-idols {
     top: 0;
     left: 0;
     width: 100%;
@@ -6,13 +6,13 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1748448930 svg {
+.custom-shape-divider-top-idols svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-top-1748448930 .shape-fill {
+.custom-shape-divider-top-idols .shape-fill {
     fill: #FFFFFF;
 }
