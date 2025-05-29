@@ -1,4 +1,4 @@
-.custom-shape-divider-top-split {
+.custom-shape-divider-top-history {
   position: relative;
   display: block;
   width: -webkit-calc(100% + 1.3px);
@@ -6,7 +6,7 @@
   height: 80px;
 }
 
-.custom-shape-divider-top-split svg {
+.custom-shape-divider-top-history svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
   line-height: 0;
 }
 
-.custom-shape-divider-top-split svg svg {
+.custom-shape-divider-top-history svg svg {
   position: relative;
   display: block;
   width: -webkit-calc(100% + 1.3px);
