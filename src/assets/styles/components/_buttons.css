@@ -38,6 +38,7 @@
 
 /* Animação da seta */
 .arrow-icon {
+   display: inline-block;    
   transition: transform 0.3s ease-in-out;
   font-weight: 625; 
   filter: drop-shadow(0.5px 0 0 currentColor); 
@@ -45,5 +46,9 @@
 }
 
 .btn-space:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.btn-idols:hover .arrow-icon {
   transform: translateX(4px);
 }
