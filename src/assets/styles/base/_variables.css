@@ -34,3 +34,30 @@
   --box-shadow-border: #0000000f;
   --box-border: #fff;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+  .gallery-row {
+    flex-wrap: wrap;
+  }
+  
+  .book {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .book {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* AJUSTES DE ESPAÇAMENTO */
+.left-column {
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
