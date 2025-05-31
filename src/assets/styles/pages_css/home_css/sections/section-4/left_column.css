@@ -1,0 +1,54 @@
+.left-column {
+  padding: 30px;
+  background-color: var(--background-color-3);
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+.left-column h2 {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 15px;
+  font-family: var(--f2-title);
+  font-size: 3.5rem;
+  color: var(--primary-color-text);
+  text-shadow: 0 0 10px rgba(234, 229, 229, 0.5);
+  filter: drop-shadow(0 0 10px rgba(99, 99, 99, 0.9));
+}
+.left-column h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 18rem;
+  height: 9px;
+  background: linear-gradient(90deg, var(--primary-color-text), var(--accent-color));
+  filter: drop-shadow(0 0 10px rgba(234, 229, 229, 0.5));
+  border-radius: 10px;
+}
+
+.idol-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.idol-paragraph {
+  font-family: var(--f-subtitle);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, var(--primary-color-text), #a4a3a3, #ffffff, #ededeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 400% 400%;
+  animation: gradientAnimation 4s ease infinite;
+  margin-top: 2rem;
+}
+@keyframes gradientAnimation {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
