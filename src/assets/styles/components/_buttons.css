@@ -15,14 +15,12 @@
   -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .btn-space:hover {
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.25);
   font-weight: 600; 
 }
-
 .btn-space:active {
   -webkit-transform: translateY(-1px);
   transform: translateY(-1px);
@@ -36,6 +34,30 @@
   padding: 5px 5px;
 } 
 
+.btn-idols {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 25px;
+  font-family: var(--f-subtitle);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--primary-color-text);
+  background: linear-gradient(45deg, var(--accent-color), #b21f1f);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-idols:hover {
+  background: linear-gradient(45deg, #b21f1f, var(--accent-color));
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.6);
+  transform: translateY(-3px);
+}
+
 /* Animação da seta */
 .arrow-icon {
    display: inline-block;    
@@ -48,7 +70,6 @@
 .btn-space:hover .arrow-icon {
   transform: translateX(4px);
 }
-
 .btn-idols:hover .arrow-icon {
   transform: translateX(4px);
 }
