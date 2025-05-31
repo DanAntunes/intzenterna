@@ -1,0 +1,30 @@
+@import url(./_hero_media.css);
+@import url(./_hero_typograph.css);
+@import url(./_hero_content.css);
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+}
+.logo-intz-home {
+  width: 30px;
+  height: 16px;
+}
+/* Parallax leve */
+@media (min-width: 768px) {
+  .hero {
+    -webkit-perspective: 2px;
+    perspective: 2px;
+  }
+  .hero-video {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
+  .hero-content {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
