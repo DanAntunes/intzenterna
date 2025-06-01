@@ -1,6 +1,6 @@
-@import url(./_hero_media.css);
-@import url(./_hero_typograph.css);
-@import url(./_hero_content.css);
+@import url(./css/_hero_media.css);
+@import url(./css/_hero_typograph.css);
+@import url(./css/_hero_content.css);
 /* Hero Section */
 .hero {
   position: relative;
