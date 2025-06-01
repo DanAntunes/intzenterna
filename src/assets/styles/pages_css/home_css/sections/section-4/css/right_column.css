@@ -34,3 +34,19 @@ h2.hall-title {
   perspective: 1000px;
   gap: 20px;
 }
+.hall-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #d3a304,
+    #ffee00,
+    transparent
+  );
+}
