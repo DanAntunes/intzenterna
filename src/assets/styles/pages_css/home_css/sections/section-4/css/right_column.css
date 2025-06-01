@@ -50,3 +50,9 @@ h2.hall-title {
     transparent
   );
 }
+.hall-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
