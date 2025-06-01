@@ -1,125 +1,157 @@
 @import url(./css/divider.css);
 @import url(./css/container.css);
 @import url(./css/left_column.css);
+@import url(./css/right_column.css);
 
 
 
+.idol-1 {
+  /* Visuais */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../../../../../image/image_pages/idolos/peter.png');
+}
+
+.author {
+  /* Tipografia */
+  font-family: var(--f2-subtitle);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-color-2);
+  text-align: right;
+
+  /* Box model */
+  margin-top: 20px;
+}
+
+.gallery-title::after {
+  /* Conteúdo */
+  content: '';
+
+  /* Layout */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Box model */
+  width: 200px;
+  height: 3px;
+
+  /* Visuais */
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-color),
+    #b21f1f,
+    transparent
+  );
+}
 
 
 
+.book {
+  /* Layout */
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: pointer;
 
+  /* Box model */
+  width: 150px;
+  height: 220px;
+  flex: 0 0 auto;
 
+  /* Outros */
+  transition: transform 0.4s ease, z-index 0.4s;
+}
 
+.book:hover {
+  /* Visuais */
+  box-shadow: none;
 
+  /* Transformações */
+  transform: rotateY(-10deg) rotateX(5deg) translateY(-20px) scale(1.15);
+  z-index: 10;
+}
 
+.book-content {
+  /* Layout */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
-        .idol-1 {
-        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../../../../image/image_pages/idolos/peter.png')
-        }
-        
-        .author {
-            margin-top: 20px;
-            color: var(--text-color-2);
-            font-size: 1.1rem;
-            font-style: italic;
-            text-align: right;
-            font-family: var(--f2-subtitle);
-        }
-        
-        .gallery-title {
-            color: var(--primary-color-text);
-            margin-bottom: 30px;
-            font-size: 1.8rem;
-            text-align: center;
-            position: relative;
-            padding-bottom: 15px;
-            font-family: var(--f-subtitle);
-        }
-        
-        .gallery-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, var(--accent-color), #b21f1f, transparent);
-        }
-        
-        .gallery-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            perspective: 1000px;
-        }
-        
-        .book {
-            width: 150px;
-            height: 220px;
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateY(0) rotateX(0);
-            transition: transform 0.4s ease, z-index 0.4s;
-            cursor: pointer;
-            flex: 0 0 auto;
-        }
-        
-        .book:hover {
-            transform: rotateY(-10deg) rotateX(5deg) translateY(-20px) scale(1.15);
-            z-index: 10;
-        }
-        
-        .book-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 15px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .book:hover .book-content {
-            box-shadow: 0 15px 30px rgba(231, 76, 60, 0.4);
-        }
-        
-        .book-overlay {
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-            color: var(--primary-color-text);
-            padding: 15px;
-            border-radius: 0 0 8px 8px;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-            font-family: var(--f2-subtitle);
-        }
-        
-        .book:hover .book-overlay {
-            transform: translateY(0);
-        }
-        
-        .book-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: var(--primary-color-text);
-        }
-        
-        .book-author {
-            font-size: 0.85rem;
-            opacity: 0.8;
-            color: var(--background-color-2);
-        }
+  /* Box model */
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+
+  /* Visuais */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+
+  /* Outros */
+  transition: all 0.3s ease;
+}
+
+.book:hover .book-content {
+  /* Visuais */
+  box-shadow: 0 15px 30px rgba(231, 76, 60, 0.4);
+}
+
+.book-overlay {
+  /* Tipografia */
+  font-family: var(--f2-subtitle);
+  color: var(--primary-color-text);
+
+  /* Layout */
+  position: relative;
+  transform: translateY(100%);
+
+  /* Box model */
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+
+  /* Visuais */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+
+  /* Outros */
+  transition: transform 0.3s ease;
+}
+
+.book:hover .book-overlay {
+  /* Transformações */
+  transform: translateY(0);
+}
+
+.book-title {
+  /* Tipografia */
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primary-color-text);
+
+  /* Box model */
+  margin-bottom: 5px;
+}
+
+.book-author {
+  /* Tipografia */
+  font-size: 0.85rem;
+  color: var(--background-color-2);
+
+  /* Visuais */
+  opacity: 0.8;
+}
+
         
         /* Efeito de borda brilhante para toda a seção */
         .section-container {
