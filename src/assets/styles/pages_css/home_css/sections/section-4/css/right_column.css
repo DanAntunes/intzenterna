@@ -1,0 +1,36 @@
+.right-column{
+  padding: 1rem;
+  background-color: #0d0c0cf7;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+h2.hall-title {
+  font-family: var(--f-title);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  background: linear-gradient(
+    45deg,
+    #b8860b 0%,
+    #ffd700 33%,
+    #ffeb85 66%,
+    #fdf5e6 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 400% 400%;
+  filter: drop-shadow(0 0 10px rgba(255, 183, 0, 0.5));
+  position: relative;
+}
+.hall-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  gap: 20px;
+}
