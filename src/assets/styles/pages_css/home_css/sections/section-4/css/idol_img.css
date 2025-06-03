@@ -1,0 +1,35 @@
+.idol-img-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../../../../image/image_pages/idolos/peter.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.idol-img-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../../../../image/image_pages/idolos/micao.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.idol-img-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../../../../image/image_pages/idolos/jockster.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.idol-img-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../../../../image/image_pages/idolos/shini.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.idol-img-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../../../../image/image_pages/idolos/envy.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.idol-img-6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../../../../image/image_pages/idolos/tockers.jpg");
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=idol_img.css.map */
