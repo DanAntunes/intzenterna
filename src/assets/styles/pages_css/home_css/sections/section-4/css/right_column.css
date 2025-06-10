@@ -92,3 +92,16 @@ h2.hall-title {
 .idol:hover .idol-content {
   box-shadow: 0 15px 30px rgba(231, 76, 60, 0.4);
 }
+.idol-overlay {
+  font-family: var(--f2-subtitle);
+  color: var(--primary-color-text);
+  position: relative;
+  transform: translateY(100%);
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  transition: transform 0.3s ease;
+}
+.idol:hover .idol-overlay {
+  transform: translateY(0);
+}
