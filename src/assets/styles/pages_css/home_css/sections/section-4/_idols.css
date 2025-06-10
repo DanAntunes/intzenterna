@@ -2,17 +2,9 @@
 @import url(./css/container.css);
 @import url(./css/left_column.css);
 @import url(./css/right_column.css);
+@import url(./css/idol_img.css);
 
 
-
-.idol-1 {
-  /* Visuais */
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('../../../../../image/image_pages/idolos/peter.png');
-}
 
 .author {
   /* Tipografia */
@@ -28,63 +20,6 @@
 
 
 
-
-
-.book-content {
-  /* Layout */
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  /* Box model */
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-
-  /* Visuais */
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-
-  /* Outros */
-  transition: all 0.3s ease;
-}
-
-.book:hover .book-content {
-  /* Visuais */
-  box-shadow: 0 15px 30px rgba(231, 76, 60, 0.4);
-}
-
-.book-overlay {
-  /* Tipografia */
-  font-family: var(--f2-subtitle);
-  color: var(--primary-color-text);
-
-  /* Layout */
-  position: relative;
-  transform: translateY(100%);
-
-  /* Box model */
-  padding: 15px;
-  border-radius: 0 0 8px 8px;
-
-  /* Visuais */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-
-  /* Outros */
-  transition: transform 0.3s ease;
-}
-
-.book:hover .book-overlay {
-  /* Transformações */
-  transform: translateY(0);
-}
 
 .book-title {
   /* Tipografia */
