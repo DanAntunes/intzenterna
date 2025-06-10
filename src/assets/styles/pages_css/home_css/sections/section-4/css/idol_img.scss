@@ -1,0 +1,18 @@
+$idols: (
+  1: 'peter.png',
+  2: 'micao.png',
+  3: 'jockster.jpg',
+  4: 'shini.jpg',
+  5: 'envy.png',
+  6: 'tockers.jpg',
+);
+
+@each $i, $img in $idols {
+  .idol-img-#{$i} {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../../../../../../image/image_pages/idolos/#{$img}');
+    background-size: cover;
+    background-position: center;
+  }
+}
