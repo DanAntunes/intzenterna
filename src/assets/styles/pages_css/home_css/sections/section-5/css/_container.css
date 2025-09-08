@@ -1,0 +1,101 @@
+.section-curiosities {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+.curiosities-top-bg {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 92px;               /* controla quanto do topo "continua" */
+  background: rgba(255, 255, 255, 0.95);        /* mude para a cor da section-idol se necessário */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* wrapper principal com alinhamento */
+.curiosities-inner {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  border: 1px solid red;
+}
+
+/* ================ Imagem flutuante ================ */
+.curiosities-hero-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
+  align-items: flex-start;
+}
+
+/* tamanho fixo para testes (ajuste se quiser) */
+.curiosities-hero {
+  width: 1020px;        /* largura fixa maior */
+  height: 420px;       /* altura fixa maior */
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-top: -72px;   /* o quanto ela "flutua" para cima (não sobe demais) */
+  z-index: 3;
+  display: block;
+  border: 1px solid green;
+  pointer-events: none;
+}
+
+/* overlay posicionado sobre a imagem para legibilidade do botão/texto */
+.curiosities-hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 4;
+  width: calc(100% - 80px);
+  max-width: 720px;
+  pointer-events: auto;
+}
+
+
+/* subtítulo abaixo do botão (a tocar a imagem) */
+.curiosities-sub {
+  margin: 10px 0 0;
+  color: #e6e6e6;
+  font-size: 0.95rem;
+}
+
+/* ================ conteúdo abaixo da imagem ================ */
+/* garante que o container com conteúdo não fique embaixo da imagem flutuante */
+.container-curiosities {
+  padding-top: 56px; /* ajuste conforme altura/overlap da imagem */
+  z-index: 2;
+  position: relative;
+}
+
+/* ================ Responsivo ================ */
+@media (max-width: 1000px) {
+  .curiosities-hero {
+    width: 86vw;
+    height: 40vw;
+    margin-top: -48px;
+  }
+  .curiosities-hero-overlay { width: 86%; max-width: none; }
+  .container-curiosities { padding-top: 48px; }
+}
+
+@media (max-width: 480px) {
+  .curiosities-top-bg { height: 64px; }
+  .curiosities-hero {
+    width: 92vw;
+    height: 56vw;
+    margin-top: -28px;
+    border-radius: 0.5rem;
+  }
+  .curiosities-hero-title { font-size: 1.2rem; }
+  .btn-curiosities { padding: 0.6rem 1rem; font-size: 0.95rem; }
+  .container-curiosities { padding-top: 36px; }
+  .curiosities-hero-overlay::before { inset: -4px; }
+}
